@@ -16,20 +16,20 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-black/60 backdrop-blur-md text-white py-4 px-6 shadow-md">
+    <nav className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-md text-white py-4 px-6 shadow-md">
       <div className="flex justify-between items-center">
         {/* Logo + Brand Name */}
         <div className="flex items-center space-x-3">
           <Image
             src="/logo.png"
             alt="Mech IT Possible Logo"
-            width={70}
-            height={70}
-            className="object-cover rounded-none"
+            width={50}
+            height={50}
+            className="object-cover rounded-none aspect-square"
           />
           <div className="leading-tight select-none">
-            <div className="text-2xl font-extrabold text-cyan-400">MECH IT</div>
-            <div className="text-lg font-semibold text-pink-400">POSSIBLE</div>
+            <div className="text-xl font-extrabold text-cyan-400">MECH IT</div>
+            <div className="text-md font-semibold text-pink-400">POSSIBLE</div>
           </div>
         </div>
 
