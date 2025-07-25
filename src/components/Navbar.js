@@ -1,29 +1,27 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
-import Image from 'next/image';
-import logo from '../public/logo.png';
+import Link from "next/link";
+import { useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Automation', href: '/automation' },
-    { name: 'Training', href: '/training' },
-    { name: 'Product', href: '/product' },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Automation", href: "/automation" },
+    { name: "Training", href: "/training" },
+    { name: "Product", href: "/product" },
   ];
 
   return (
     <nav className="fixed w-full z-50 bg-black/60 backdrop-blur-md text-white py-4 px-6 shadow-md">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-
+      <div className="flex justify-between items-center">
         {/* Logo + Brand Name */}
         <div className="flex items-center space-x-3">
           <Image
-            src={logo}
+            src="/logo.png"
             alt="Mech IT Possible Logo"
             width={70}
             height={70}
