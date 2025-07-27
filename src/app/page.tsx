@@ -23,6 +23,8 @@ import PopupWidget from "@/components/popupWidget";
 // const PopupWidget = dynamic(() => import("../components/popupWidget"));
 import React from "react";
 import ImageSlider from "@/components/ImageSlider";
+import Image from "next/image";
+import IntroCards from "@/components/IntroCards";
 
 const Home = () => {
   return (
@@ -36,7 +38,12 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ImageSlider />
+      <section>
+        <ImageSlider />
+      </section>
+      <section>
+        <IntroCards />
+      </section>
       <Hero />
       <SectionTitle
         pretitle="Nextly Benefits"
