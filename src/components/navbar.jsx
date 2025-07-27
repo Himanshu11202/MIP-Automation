@@ -12,7 +12,13 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 export default function Navbar() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const navigation = [
+    { name: "Product", link: "/products" },
+    { name: "Features", link: "/features" },
+    { name: "Pricing", link: "/pricing" },
+    { name: "Contact us", link: "/contact" },
+    { name: "Blog", link: "/blog" },
+  ];
   const panelRef = useRef(null);
 
   // Set initial collapsed style
@@ -101,7 +107,6 @@ export default function Navbar() {
                     </svg>
                   </DisclosureButton>
                 </div>
-
               </div>
 
               {/* Desktop Menu */}
@@ -110,10 +115,10 @@ export default function Navbar() {
                   {navigation.map((item, index) => (
                     <li key={index}>
                       <Link
-                        href="/"
+                        href={item.link}
                         className="text-gray-800 dark:text-gray-200 hover:text-indigo-500"
                       >
-                        {item}
+                        {item.name}
                       </Link>
                     </li>
                   ))}
@@ -122,7 +127,7 @@ export default function Navbar() {
                   href="/"
                   className="px-6 py-2 text-white bg-indigo-600 rounded-md"
                 >
-                  Get Started
+                  contact us
                 </Link>
                 <ThemeChanger />
               </div>
@@ -139,10 +144,10 @@ export default function Navbar() {
                   {navigation.map((item, index) => (
                     <Link
                       key={index}
-                      href="/"
+                      href={item.link}
                       className="text-gray-700 dark:text-gray-300 hover:text-indigo-500 py-2"
                     >
-                      {item}
+                      {item.name}
                     </Link>
                   ))}
                   <Link
@@ -151,15 +156,10 @@ export default function Navbar() {
                   >
                     Get Started
                   </Link>
-
                 </div>
-
               </div>
-
             </DisclosurePanel>
-
           </div>
-
         );
       }}
     </Disclosure>
