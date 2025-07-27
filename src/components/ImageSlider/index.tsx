@@ -40,18 +40,11 @@ const ImageSlider = () => {
           },
         }}
       >
-        <SwiperSlide>
-          <ImageElement />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageElement />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageElement />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageElement />
-        </SwiperSlide>
+        {[1, 2, 3, 4, 5].map((_, index) => (
+          <SwiperSlide key={index}>
+            <ImageElement />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
