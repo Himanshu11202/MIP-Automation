@@ -22,6 +22,7 @@ import PopupWidget from "@/components/popupWidget";
 
 // const PopupWidget = dynamic(() => import("../components/popupWidget"));
 import React from "react";
+import ImageSlider from "@/components/ImageSlider";
 
 const Home = () => {
   return (
@@ -29,12 +30,13 @@ const Home = () => {
       <Head>
         <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
         <meta
-          name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          name="MIP - Automations"
+          content="mip automations : mech it possible"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <ImageSlider />
       <Hero />
       <SectionTitle
         pretitle="Nextly Benefits"
