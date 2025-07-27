@@ -106,12 +106,12 @@ Example:
 ## 🧪 Miscellaneous
 
 | Tag            | Description                                                                                |
-| -------------- | ------------------------------------------------------------------------------------------ | --- |
+| -------------- | ------------------------------------------------------------------------------------------ |
 | `[WIP]`        | Work in Progress PR (not ready to merge)                                                   |
 | `[EXPERIMENT]` | Experimental or prototype changes                                                          |
 | `[HOTFIX]`     | Emergency fix for production                                                               |
 | `[ROLLBACK]`   | Reverts previous changes                                                                   |
-| `[TODO]`       | todos/tasks for next sprint,(tag must used with comma `,` and title must be seperated by ` | `   |
+| `[TODO]`       | todos/tasks for next sprint,(tag must used with comma `,` and title must be seperated by ` |
 | `[DONE]`       | todos/tasks for the sprint is done                                                         |
 
 ---
