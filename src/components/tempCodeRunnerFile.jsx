@@ -13,26 +13,27 @@ import { useGSAP } from "@gsap/react";
 
 export default function Navbar() {
   const navigation = [
-    { name: "Home", link: "/" },
-    { name: "Products", link: "/products" },
-    { name: "About Us", link: "/about" },
-    { name: "Automation", link: "/automation" },
-    { name: "Training", link: "/training" },
-    { name: "Blog", link: "/Blog" },
+    { name: "Product", link: "/products" },
+    { name: "Features", link: "/features" },
+    { name: "Pricing", link: "/pricing" },
+    { name: "Contact us", link: "/contact" },
+    { name: "Blog", link: "/blog" },
   ];
-
   const panelRef = useRef(null);
 
+  // Set initial collapsed style
   useGSAP(() => {
     if (panelRef.current) {
       gsap.set(panelRef.current, {
         height: 0,
         overflow: "hidden",
+        // opacity: 0, // Add opacity for extra safety
         visibility: "visible",
       });
     }
   }, []);
 
+  // Toggle animation
   const animatePanel = (open) => {
     const el = panelRef.current;
     if (!el) return;
@@ -48,6 +49,7 @@ export default function Navbar() {
     } else {
       gsap.to(el, {
         height: 0,
+        // opacity: 0,
         duration: 0.3,
         ease: "power2.inOut",
       });
@@ -57,38 +59,36 @@ export default function Navbar() {
   return (
     <Disclosure>
       {({ open }) => {
+        // Animate when `open` changes
         useEffect(() => {
           animatePanel(open);
         }, [open]);
 
         return (
-          <div className="relative w-full bg-gray-100 dark:bg-gray-900 shadow-md">
-            <nav className="w-full flex flex-wrap items-center justify-between px-4 lg:px-6 py-2 lg:py-3">
-              {/* Logo and Name */}
+          <div className="relative w-full">
+            {/* Navbar */}
+            <nav className="container relative z-30 flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
+              {/* Left: Logo + Burger */}
               <div className="flex items-center justify-between w-full lg:w-auto">
-                <Link href="/" className="flex items-center space-x-3">
-  <img
-    src="/logo.png"
-    alt="Logo"
-    className="w-16 h-16 object-contain"
-  />
-  <div className="text-left">
-    <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight leading-none">
-      <span className="text-sky-400">MACH IT </span>
-      <span className="text-rose-400">POSSIBLE</span>
-    </h1>
-  </div>
-</Link>
+                <Link
+                  href="/"
+                  className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
+                >
+                  <img src="/img/logo.svg" alt="Logo" width={32} height={32} />
+                  <span>Nextly</span>
+                </Link>
 
-                {/* Mobile Right Side Buttons */}
-                <div className="lg:hidden ml-2 flex items-center gap-4">
-                  <ThemeChanger />
+                {/* ThemeChanger visible only on mobile */}
+                <div className="lg:hidden mr-2 flex justify-center items-center gap-8">
+                  <div className="scale-125">
+                    <ThemeChanger />
+                  </div>
                   <DisclosureButton
                     aria-label="Toggle Menu"
-                    className="px-2 py-1 text-gray-600 dark:text-gray-300 hover:text-indigo-600 focus:outline-none"
+                    className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:text-gray-300 dark:focus:bg-trueGray-700"
                   >
                     <svg
-                      className="w-7 h-7 fill-current"
+                      className="w-6 h-6 fill-current"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -110,55 +110,51 @@ export default function Navbar() {
               </div>
 
               {/* Desktop Menu */}
-              <div className="hidden lg:flex items-center space-x-8">
-                <ul className="flex space-x-6">
+              <div className="hidden lg:flex items-center space-x-6">
+                <ul className="flex space-x-4">
                   {navigation.map((item, index) => (
                     <li key={index}>
                       <Link
                         href={item.link}
-                        className="text-gray-700 dark:text-gray-300 hover:text-indigo-700 dark:hover:text-indigo-400 font-semibold transition duration-300"
+                        className="text-gray-800 dark:text-gray-200 hover:text-indigo-500"
                       >
                         {item.name}
                       </Link>
                     </li>
                   ))}
                 </ul>
-
-                {/* Contact + Theme Right */}
-                <div className="flex items-center space-x-4">
-                  <Link
-                    href="/contact"
-                    className="px-5 py-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold shadow-md hover:from-purple-600 hover:to-indigo-600 transition duration-300"
-                  >
-                    Contact Us
-                  </Link>
-                  <ThemeChanger />
-                </div>
+                <Link
+                  href="/"
+                  className="px-6 py-2 text-white bg-indigo-600 rounded-md"
+                >
+                  contact us
+                </Link>
+                <ThemeChanger />
               </div>
             </nav>
 
-            {/* Mobile Panel */}
+            {/* Mobile Menu - Remove static prop */}
             <DisclosurePanel static>
               <div
                 ref={panelRef}
                 className="absolute top-full left-0 right-0 z-20 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 lg:hidden"
                 style={{ visibility: "hidden" }}
               >
-                <div className="flex flex-col py-4 px-6 space-y-3">
+                <div className="flex flex-col py-4 px-6 space-y-2">
                   {navigation.map((item, index) => (
                     <Link
                       key={index}
                       href={item.link}
-                      className="text-gray-700 dark:text-gray-300 hover:text-indigo-700 dark:hover:text-indigo-400 py-2 font-semibold"
+                      className="text-gray-700 dark:text-gray-300 hover:text-indigo-500 py-2"
                     >
                       {item.name}
                     </Link>
                   ))}
                   <Link
-                    href="/contact"
-                    className="w-full px-6 py-3 mt-4 text-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold shadow-lg hover:from-purple-600 hover:to-indigo-600 transition duration-300"
+                    href="/"
+                    className="w-full px-6 py-2 mt-4 text-center text-white bg-indigo-600 rounded-md"
                   >
-                    Contact Us
+                    Get Started
                   </Link>
                 </div>
               </div>
