@@ -1,11 +1,11 @@
 import {
-  EmojiHappyIcon,
-  ChartSquareBarIcon,
-  CursorClickIcon,
-  DeviceMobileIcon,
-  AdjustmentsIcon,
+  FaceSmileIcon,
+  ChartBarIcon,
+  CursorArrowRaysIcon,
+  DevicePhoneMobileIcon,
+  AdjustmentsHorizontalIcon,
   SunIcon,
-} from "@heroicons/react/outline";
+} from "@heroicons/react/24/outline";
 
 export const benefitOne = {
   title: "Highlight your benefits",
@@ -15,17 +15,17 @@ export const benefitOne = {
     {
       title: "Understand your customers",
       desc: "Then explain the first point breifly in one or two lines.",
-      icon: <EmojiHappyIcon />,
+      icon: <FaceSmileIcon />,
     },
     {
       title: "Improve acquisition",
       desc: "Here you can add the next benefit point.",
-      icon: <ChartSquareBarIcon />,
+      icon: <ChartBarIcon />,
     },
     {
       title: "Drive customer retention",
       desc: "This will be your last bullet point in this section.",
-      icon: <CursorClickIcon />,
+      icon: <CursorArrowRaysIcon />,
     },
   ],
 };
@@ -38,12 +38,12 @@ export const benefitTwo = {
     {
       title: "Mobile Responsive Template",
       desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DeviceMobileIcon />,
+      icon: <DevicePhoneMobileIcon />,
     },
     {
       title: "Powered by Next.js & TailwindCSS",
       desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsIcon />,
+      icon: <AdjustmentsHorizontalIcon />,
     },
     {
       title: "Dark & Light Mode",
