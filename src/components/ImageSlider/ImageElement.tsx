@@ -10,24 +10,22 @@ const ImageElement = ({ desktopImage, mobileImage }: ImageElementProps) => {
   return (
     <div className="w-full h-full">
       {/* Desktop image */}
-      <div className="hidden md:block">
+      <div className="hidden md:block w-full h-full">
         <Image
           src={desktopImage}
           alt="Desktop version"
-          width={1200}
-          height={800}
-          className="w-full h-auto object-cover"
+          fill // required
+          className="w-full h-full object-cover"
         />
       </div>
 
       {/* Mobile image */}
-      <div className="block md:hidden">
+      <div className="block md:hidden w-full h-full">
         <Image
           src={mobileImage}
           alt="Mobile version"
-          width={600}
-          height={800}
-          className="w-full h-auto object-cover"
+          fill
+          className="w-full h-full object-cover"
         />
       </div>
     </div>
