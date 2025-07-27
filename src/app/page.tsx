@@ -47,8 +47,8 @@ const Home = () => {
         and indie projects. Its built with Next.js & TailwindCSS. And its
         completely open-source.
       </SectionTitle>
-      {/* <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} /> */}
+      <Benefits data={benefitOne} />
+      <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs"
@@ -70,10 +70,10 @@ const Home = () => {
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
       </SectionTitle>
-      {/* <Faq /> */}
+      <Faq />
       <Cta />
       <Footer />
-      {/* <PopupWidget /> */}
+      <PopupWidget />
     </>
   );
 };
