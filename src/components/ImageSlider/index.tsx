@@ -42,7 +42,10 @@ const ImageSlider = () => {
       >
         {[1, 2, 3, 4, 5].map((_, index) => (
           <SwiperSlide key={index}>
-            <ImageElement />
+            <ImageElement
+              mobileImage="/test-img-mobile.png"
+              desktopImage="/test-img-desktop.png"
+            />
           </SwiperSlide>
         ))}
       </Swiper>
