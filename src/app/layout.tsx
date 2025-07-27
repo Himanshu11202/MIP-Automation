@@ -1,5 +1,7 @@
 import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Nextly - Free Nextjs & TailwindCSS Landing Page Template",
@@ -25,7 +27,9 @@ export default function RootLayout({
       </head>
       <body data-theme="dark">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
