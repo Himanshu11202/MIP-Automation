@@ -32,7 +32,7 @@ const IntroCards = () => {
     },
   ];
   return (
-    <div className="w-full grid grid-cols-1 gap-y-4 place-items-center md:grid-cols-2 lg:grid-cols-4 lg:gap-x-4 px-8 my-6">
+    <div className="w-full grid grid-cols-1 gap-y-4 place-items-center md:grid-cols-2 lg:grid-cols-4 lg:gap-x-4 px-8 py-2">
       {IntroCardsData.map((item, index) => (
         <Cards
           key={index}
