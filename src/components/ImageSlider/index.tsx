@@ -11,7 +11,6 @@ import { Autoplay, EffectCreative, Pagination } from "swiper/modules";
 
 import ImageElement from "./ImageElement";
 import styles from "./slider.module.css";
-import Image from "next/image";
 
 const ImageSlider = () => {
   return (
