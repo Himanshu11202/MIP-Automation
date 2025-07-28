@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import ThemeChanger from "./DarkSwitch";
+import ThemeChanger from "./DarkSwitch"; 
 import {
   Disclosure,
   DisclosureButton,
@@ -18,7 +18,7 @@ export default function Navbar() {
     { name: "About Us", link: "/about" },
     { name: "Automation", link: "/automation" },
     { name: "Training", link: "/training" },
-    { name: "Blog", link: "/Blog" },
+    { name: "Blog", link: "/blog" },
   ];
 
   const panelRef = useRef(null);
@@ -68,7 +68,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between w-full lg:w-auto">
                 <Link href="/" className="flex items-center space-x-3">
                   <img
-                    src="/logo.png"
+                    src="/img/images/logo-155x177.png"
                     alt="Logo"
                     className="w-12 aspect-square object-cover"
                   />
