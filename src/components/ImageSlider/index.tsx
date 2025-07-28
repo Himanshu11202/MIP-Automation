@@ -15,10 +15,10 @@ import styles from "./slider.module.css";
 const ImageSlider = () => {
   return (
     <div
-      className={`w-full h-4/5 md:h-full text-black bg-black ${styles.sliderWrapper}`}
+      className={`w-full h-[80vh] text-black bg-black ${styles.sliderWrapper}`}
     >
       <Swiper
-        className="mySwiper h-full"
+        className="mySwiper h-full w-full"
         spaceBetween={50}
         slidesPerView={1}
         loop={true}
@@ -41,8 +41,11 @@ const ImageSlider = () => {
         }}
       >
         {[1, 2, 3, 4, 5].map((_, index) => (
-          <SwiperSlide key={index}>
-            <ImageElement />
+          <SwiperSlide key={index} className="h-full w-full">
+            <ImageElement
+              mobileImage="/test-img-mobile.png"
+              desktopImage="/test-img-desktop.png"
+            />
           </SwiperSlide>
         ))}
       </Swiper>

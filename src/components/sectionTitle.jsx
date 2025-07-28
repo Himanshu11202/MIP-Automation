@@ -6,7 +6,12 @@ export default function SectionTitle(props) {
     <Container
       className={`flex w-full flex-col mt-4 ${
         props.align === "left" ? "" : "items-center justify-center text-center"
-      }`}>
+      }
+      ${props.zeroXMarginPadding ? "mx-0 px-0" : ""}
+      ${props.zeroYMarginPadding ? "my-0 py-0" : ""}
+      ${props.className}
+      `}
+    >
       {props.pretitle && (
         <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
           {props.pretitle}

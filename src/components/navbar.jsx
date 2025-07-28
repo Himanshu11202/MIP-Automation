@@ -19,6 +19,7 @@ export default function Navbar() {
     { name: "Automation", link: "/automation" },
     { name: "Training", link: "/training" },
     { name: "Blog", link: "/Blog" },
+    { name: "testscroll", link: "#coustomer-feedback" },
   ];
 
   const panelRef = useRef(null);
@@ -67,18 +68,18 @@ export default function Navbar() {
               {/* Logo and Name */}
               <div className="flex items-center justify-between w-full lg:w-auto">
                 <Link href="/" className="flex items-center space-x-3">
-  <img
-    src="/logo.png"
-    alt="Logo"
-    className="w-16 h-16 object-contain"
-  />
-  <div className="text-left">
-    <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight leading-none">
-      <span className="text-sky-400">MACH IT </span>
-      <span className="text-rose-400">POSSIBLE</span>
-    </h1>
-  </div>
-</Link>
+                  <img
+                    src="/logo.png"
+                    alt="Logo"
+                    className="w-12 aspect-square object-cover"
+                  />
+                  <div className="text-left">
+                    <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight leading-none">
+                      <span className="text-sky-400">MECH IT </span>
+                      <span className="text-rose-400">POSSIBLE</span>
+                    </h1>
+                  </div>
+                </Link>
 
                 {/* Mobile Right Side Buttons */}
                 <div className="lg:hidden ml-2 flex items-center gap-4">

@@ -5,7 +5,6 @@ import SectionTitle from "@/components/sectionTitle";
 import { benefitOne, benefitTwo } from "@/components/data";
 import Video from "@/components/video";
 import Benefits from "@/components/benefits";
-import Testimonials from "@/components/testimonials";
 import Cta from "@/components/cta";
 import Faq from "@/components/faq";
 import PopupWidget from "@/components/popupWidget";
@@ -22,6 +21,10 @@ import PopupWidget from "@/components/popupWidget";
 
 // const PopupWidget = dynamic(() => import("../components/popupWidget"));
 import React from "react";
+import ImageSlider from "@/components/ImageSlider";
+import Image from "next/image";
+import IntroCards from "@/components/IntroCards";
+import CoustomerFeedBack from "@/components/coustomerFeedback";
 
 const Home = () => {
   return (
@@ -29,12 +32,27 @@ const Home = () => {
       <Head>
         <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
         <meta
-          name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          name="MIP - Automations"
+          content="mip automations : mech it possible"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <section>
+        <ImageSlider />
+      </section>
+      <section className="my-4">
+        <IntroCards />
+      </section>
+      <section id="coustomer-feedback" className="w-full mx-auto px-8">
+        <SectionTitle
+          pretitle="coustomer feedback"
+          title="what our coustomers says"
+          align="left"
+          zeroXMarginPadding
+        />
+        <CoustomerFeedBack />
+      </section>
       <Hero />
       <SectionTitle
         pretitle="Nextly Benefits"
@@ -62,7 +80,6 @@ const Home = () => {
         Testimonails is a great way to increase the brand trust and awareness.
         Use this section to highlight your popular customers.
       </SectionTitle>
-      <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.

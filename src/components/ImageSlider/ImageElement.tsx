@@ -1,13 +1,33 @@
+import Image from "next/image";
 import React from "react";
 
-const ImageElement = () => {
+export interface ImageElementProps {
+  desktopImage: string;
+  mobileImage?: string;
+}
+const ImageElement = ({ desktopImage, mobileImage }: ImageElementProps) => {
+  mobileImage = mobileImage ?? desktopImage; // use desktop image if mobile image not available
   return (
     <div className="w-full h-full">
-      <img
-        src="/test-img-mobile.png"
-        alt=""
-        className="w-full h-full object-cover"
-      />
+      {/* Desktop image */}
+      <div className="hidden md:block w-full h-full">
+        <Image
+          src={desktopImage}
+          alt="Desktop version"
+          fill // required
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Mobile image */}
+      <div className="block md:hidden w-full h-full">
+        <Image
+          src={mobileImage}
+          alt="Mobile version"
+          fill
+          className="w-full h-full object-cover"
+        />
+      </div>
     </div>
   );
 };
