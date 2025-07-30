@@ -25,7 +25,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body data-theme="dark">
+      <body data-theme="dark" className="scroll-smooth">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Navbar />
           {children}

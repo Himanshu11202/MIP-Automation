@@ -19,6 +19,7 @@ export default function Navbar() {
     { name: "Automation", link: "/automation" },
     { name: "Training", link: "/training" },
     { name: "Blog", link: "/Blog" },
+    { name: "Contact us", link: "/contact" },
   ];
 
   const panelRef = useRef(null);
