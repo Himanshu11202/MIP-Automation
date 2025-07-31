@@ -34,7 +34,7 @@ function Avatar(props: AvatarProps) {
   return (
     <div className="flex items-center mt-8 space-x-3">
       <div className="overflow-hidden rounded-full">
-        <UserCircleIcon className="w-14 h-14 text-blue-950" />
+        <UserCircleIcon className="w-14 h-14 text-blue-950 dark:text-blue-600" />
       </div>
       <div>
         <div className="text-lg font-medium">{props.name}</div>
