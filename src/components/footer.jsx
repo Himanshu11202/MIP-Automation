@@ -4,9 +4,9 @@ import Container from "./container";
 
 export default function Footer() {
   return (
-    <div className="relative bg-gray-800 text-gray-300">
+    <div className="relative bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300">
       {/* Pre-footer CTA */}
-      <div className="bg-gray-700">
+      <div className="bg-gray-200 dark:bg-gray-700">
         <Container>
           <div className="flex flex-col sm:flex-row items-center justify-between py-6">
             <div className="text-lg text-center sm:text-left mb-4 sm:mb-0">
@@ -26,8 +26,8 @@ export default function Footer() {
         <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto lg:grid-cols-12">
           {/* Address Column */}
           <div className="lg:col-span-4">
-            <h3 className="text-lg font-semibold text-white mb-4">Address</h3>
-            <p className="text-gray-400">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Address</h3>
+            <p className="text-gray-600 dark:text-gray-400">
               Mhatre Nagar, Kalyan - Shil Road.,
               <br />
               Landmark Behind Classic Hotel,
@@ -42,20 +42,20 @@ export default function Footer() {
 
           {/* Contacts & Links Column */}
           <div className="lg:col-span-4">
-            <h3 className="text-lg font-semibold text-white mb-4">Contacts</h3>
-            <p className="text-gray-400">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Contacts</h3>
+            <p className="text-gray-600 dark:text-gray-400">
               <strong>Email:</strong> sales@mipautomation.com
               <br />
               <strong>Phone:</strong> 8446065780
             </p>
-            <h3 className="text-lg font-semibold text-white mt-8 mb-4">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mt-8 mb-4">
               Links
             </h3>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="http://webmail.mipautomation.com/" target="_blank"
-                  className="text-gray-400 hover:text-white hover:underline"
+                  href="#" // Replace with actual staff login link
+                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white hover:underline"
                 >
                   Staff Login
                 </a>
@@ -79,16 +79,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-8 mt-8 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center text-sm text-center">
-          <div className="mb-4 sm:mb-0">
-            © Copyright 2025. MIP | Designed by Team 
+        <div className="py-8 mt-8 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row justify-between items-center text-sm text-center">
+          <div className="text-gray-600 dark:text-gray-400 mb-4 sm:mb-0">
+            © Copyright 2025. MIP | Designed by Team
           </div>
-          <div className="flex space-x-5 text-gray-400">
+          <div className="flex space-x-5 text-gray-500 dark:text-gray-400">
             <a
               href="#" // Replace with your Twitter link
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white"
+              className="hover:text-gray-900 dark:hover:text-white"
             >
               <span className="sr-only">Twitter</span>
               <Twitter />
@@ -97,7 +97,7 @@ export default function Footer() {
               href="https://www.facebook.com/Mech-it-possible-680041058753674/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white"
+              className="hover:text-gray-900 dark:hover:text-white"
             >
               <span className="sr-only">Facebook</span>
               <Facebook />
