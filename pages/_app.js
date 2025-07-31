@@ -1,5 +1,5 @@
 // pages/_app.js
-import '../src/styles/globals.css';  // tumhara css path ho sakta hai alag ho
+import '../src/styles/globals.css'; 
 import { ThemeProvider } from 'next-themes';
 
 export default function App({ Component, pageProps }) {
