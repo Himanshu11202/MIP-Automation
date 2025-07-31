@@ -13,7 +13,7 @@ export default function Automation() {
         {/* Background Video */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/img/images/automation video.mp4"
+          src="/img/images/automation2 video.mp4"
           autoPlay
           muted
           loop

@@ -8,6 +8,8 @@ export default function SectionTitle(props) {
         props.align === "left" ? "" : "items-center justify-center text-center"
       }
       ${props.zeroXMarginPadding ? "mx-0 px-0" : ""}
+      ${props.zeroYMarginPadding ? "my-0 py-0" : ""}
+      ${props.className}
       `}
     >
       {props.pretitle && (
