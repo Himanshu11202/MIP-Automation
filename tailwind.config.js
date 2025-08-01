@@ -45,5 +45,5 @@ module.exports = {
       stock: [defaultTheme.fontFamily.sans],
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [],
 };
