@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "@/components/sectionTitle";
 import ElipsisText from "@/components/Shared/Text/ElipsisText";
-import { blogs } from "@/lib/blogs";
+import { blogs } from "@/app/blog/blogs/blogs";
 
 const Blog = () => {
   return (
@@ -28,7 +28,7 @@ const Blog = () => {
                   maxChars={150}
                   className="text-gray-600 dark:text-gray-300 text-sm"
                 >
-                  {blog.body}
+                  {blog.description}
                 </ElipsisText>
               </div>
             </div>

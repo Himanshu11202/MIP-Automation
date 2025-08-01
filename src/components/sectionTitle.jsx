@@ -8,7 +8,7 @@ export default function SectionTitle({
   className = "",
   pretitle = "",
   title = "",
-  children = null,
+  children = "",
 }) {
   return (
     <Container

@@ -1,7 +1,6 @@
-import SectionTitle from "@/components/sectionTitle";
-import { getBlog } from "@/lib/blogs";
-import { markdownToHtml } from "@/lib/markDownToHTML";
-import Image from "next/image";
+import Image from "@/components/Shared/BlogUIKit/Image";
+import Title from "@/components/Shared/BlogUIKit/Title";
+import { getBlog } from "@/app/blog/blogs/blogs";
 import { notFound } from "next/navigation";
 import React from "react";
 
@@ -13,26 +12,16 @@ const page = async ({ params }: { params: { id: string } }) => {
     notFound();
   }
 
-  const body = await markdownToHtml(blog.body);
+  // const body = await markdownToHtml(blog.body);
 
   return (
     <>
-      <article className="prose dark:prose-invert w-full p-8 flex flex-col justify-center items-center">
-        <div className="relative w-full max-w-3xl aspect-video rounded-xl overflow-hidden shadow-lg">
-          <Image
-            src={blog.img}
-            alt={blog.alt}
-            fill
-            loading="lazy"
-            className="object-cover"
-          />
-        </div>
-        <SectionTitle
-          title={blog.title}
-          align="left"
-          className="capitalize px-0"
-        />
-        <div className="prose" dangerouslySetInnerHTML={{ __html: body }} />
+      <article className="w-full p-8 flex flex-col justify-center items-center dark:bg-trueGray-900">
+        <Image src={blog.img} alt={blog.alt} className="object-cover" />
+        <section className="w-full max-w-5xl">
+          <Title>{blog.title}</Title>
+          {blog.body}
+        </section>
       </article>
     </>
   );
