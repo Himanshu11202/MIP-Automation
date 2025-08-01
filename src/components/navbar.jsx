@@ -1,7 +1,8 @@
+
 "use client";
 
 import Link from "next/link";
-import ThemeChanger from "./DarkSwitch"; 
+import ThemeChanger from "./DarkSwitch";
 import {
   Disclosure,
   DisclosureButton,
@@ -19,6 +20,7 @@ export default function Navbar() {
     { name: "Automation", link: "/automation" },
     { name: "Training", link: "/training" },
     { name: "Blog", link: "/blog" },
+    { name: "Contact Us", link: "/contact" },
   ];
 
   const panelRef = useRef(null);

@@ -4,11 +4,11 @@ import Container from "./container";
 
 export default function Footer() {
   return (
-    <div className="relative bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300">
+    <div className="relative mt-8 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300">
       {/* Pre-footer CTA */}
       <div className="bg-gray-200 dark:bg-gray-700">
         <Container>
-          <div className="flex flex-col sm:flex-row items-center justify-between py-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between py-1 lg:py-6">
             <div className="text-lg text-center sm:text-left mb-4 sm:mb-0">
               If you want to work with MIP Automation. Get quotation right now.
             </div>
@@ -26,7 +26,9 @@ export default function Footer() {
         <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto lg:grid-cols-12">
           {/* Address Column */}
           <div className="lg:col-span-4">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Address</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              Address
+            </h3>
             <p className="text-gray-600 dark:text-gray-400">
               Mhatre Nagar, Kalyan - Shil Road.,
               <br />
@@ -42,7 +44,9 @@ export default function Footer() {
 
           {/* Contacts & Links Column */}
           <div className="lg:col-span-4">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Contacts</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              Contacts
+            </h3>
             <p className="text-gray-600 dark:text-gray-400">
               <strong>Email:</strong> sales@mipautomation.com
               <br />
