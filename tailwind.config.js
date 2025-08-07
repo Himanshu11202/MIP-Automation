@@ -15,6 +15,8 @@ module.exports = {
       colors: {
         trueGray: colors.neutral,
         app: {
+          // add app specific colors
+
           green: "#3DDFA3",
           "green-hover": "#2fa77b",
           "green-clicked": "#32CD32",
@@ -39,6 +41,10 @@ module.exports = {
           purple: "#944CE",
         },
       },
+      // next/font tailwind configuration
+      // fontFamily: {
+      //   inter: ["var(--font-inter)"],
+      // },
     },
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],

@@ -30,7 +30,8 @@
     ".next/types/**/*.ts",
     "src/components/container.jsx",
     "src/components/benefits.js",
-    "src/app/layout.jsx"
+    "src/app/layout.jsx",
+    "types"
   ],
   "exclude": ["node_modules"]
 }
