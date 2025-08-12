@@ -12,8 +12,53 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-poppins)", "sans-serif"], // Make Poppins default
+      },
       colors: {
         trueGray: colors.neutral,
+        // light: {
+        //   background: "#FFFFFF",
+        //   "background-secondary": "#F8FAFC",
+        //   "background-muted": "#E0F2FE",
+        //   foreground: "#0F172A",
+        //   "foreground-secondary": "#334155",
+        //   "foreground-muted": "#64748B",
+        //   card: "#FFFFFF",
+        //   "card-foreground": "#0F172A",
+        //   border: "#E2E8F0",
+        //   input: "#F1F5F9",
+        //   ring: "#0EA5E9",
+        //   primary: "#0EA5E9",
+        //   "primary-foreground": "#FFFFFF",
+        //   secondary: "#F1F5F9",
+        //   "secondary-foreground": "#0F172A",
+        //   success: "#10B981",
+        //   warning: "#F59E0B",
+        //   error: "#EF4444",
+        //   info: "#0EA5E9",
+        // },
+        // dark: {
+        background: "#0F172A",
+        "background-secondary": "#1E293B",
+        "background-muted": "#0C4A6E",
+        foreground: "#F1F5F9",
+        "foreground-secondary": "#E2E8F0",
+        "foreground-muted": "#94A3B8",
+        card: "#1E293B",
+        "card-foreground": "#F1F5F9",
+        border: "#334155",
+        input: "#334155",
+        ring: "#38BDF8",
+        primary: "#38BDF8",
+        "primary-foreground": "#0F172A",
+        secondary: "#334155",
+        "secondary-foreground": "#F1F5F9",
+        success: "#34D399",
+        warning: "#FBBF24",
+        error: "#F87171",
+        info: "#38BDF8",
+        // },
         app: {
           // add app specific colors
 
@@ -45,10 +90,6 @@ module.exports = {
       // fontFamily: {
       //   inter: ["var(--font-inter)"],
       // },
-    },
-    fontFamily: {
-      sans: ["Inter", ...defaultTheme.fontFamily.sans],
-      stock: [defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],
