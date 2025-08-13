@@ -42,11 +42,11 @@ const Home = () => {
           desktopImage="/img/background-desktop.jpg"
           className="opacity-20"
         />
-        <div className="absolute top-0 w-full h-full px-16 md:px-56 flex justify-start  items-center">
+        <div className="absolute top-0 w-full h-full px-16 md:px-36 lg:px-56 flex justify-start  items-center">
           <HeroSection />
         </div>
       </section>
-      <section className="w-screen h-screen bg-background-muted relative px-16 md:px-56 flex justify-center  items-center">
+      <section className="w-screen h-screen bg-background-muted relative px-16 md:px-36 lg:px-56 flex justify-center  items-center">
         <IntroSection />
       </section>
       <section className="my-4">
