@@ -10,6 +10,8 @@ import {
   EffectCoverflow,
 } from "swiper/modules";
 import styles from "./slider.module.css";
+import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Testimonials from "./Testimonials";
 

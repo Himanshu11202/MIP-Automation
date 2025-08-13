@@ -25,26 +25,34 @@ import ImageSlider from "@/components/ImageSlider";
 import Image from "next/image";
 import IntroCards from "@/components/IntroCards";
 import CoustomerFeedBack from "@/components/coustomerFeedback";
+import ImageElement from "@/components/ImageSlider/ImageElement";
+import HeroSection from "@/components/HeroSection";
+import IntroSection from "@/components/introSection";
 
 const Home = () => {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
-        <meta
-          name="MIP - Automations"
-          content="mip automations : mech it possible"
-        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section>
-        <ImageSlider />
+      <section className="w-screen h-screen relative">
+        {/* <ImageSlider /> */}
+        <ImageElement
+          desktopImage="/img/background-desktop.jpg"
+          className="opacity-20"
+        />
+        <div className="absolute top-0 w-full h-full px-16 md:px-56 flex justify-start  items-center">
+          <HeroSection />
+        </div>
+      </section>
+      <section className="w-screen h-screen bg-background-muted relative px-16 md:px-56 flex justify-center  items-center">
+        <IntroSection />
       </section>
       <section className="my-4">
         <IntroCards />
       </section>
-      <section id="coustomer-feedback" className="w-full mx-auto px-8">
+      <section id="coustomer-feedback" className="w-full mx-auto px-8 ">
         <SectionTitle
           pretitle="coustomer feedback"
           title="what our coustomers says"
