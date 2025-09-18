@@ -4,8 +4,15 @@ import React from "react";
 export interface ImageElementProps {
   desktopImage: string;
   mobileImage?: string;
+  alt?: string;
+  className?: string;
 }
-const ImageElement = ({ desktopImage, mobileImage }: ImageElementProps) => {
+const ImageElement = ({
+  desktopImage,
+  mobileImage,
+  alt,
+  className,
+}: ImageElementProps) => {
   mobileImage = mobileImage ?? desktopImage; // use desktop image if mobile image not available
   return (
     <div className="w-full h-full">
@@ -13,9 +20,9 @@ const ImageElement = ({ desktopImage, mobileImage }: ImageElementProps) => {
       <div className="hidden md:block w-full h-full">
         <Image
           src={desktopImage}
-          alt="Desktop version"
+          alt={alt || "Desktop version"}
           fill // required
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover ${className}`}
         />
       </div>
 
@@ -23,9 +30,9 @@ const ImageElement = ({ desktopImage, mobileImage }: ImageElementProps) => {
       <div className="block md:hidden w-full h-full">
         <Image
           src={mobileImage}
-          alt="Mobile version"
+          alt={alt || "Mobile version"}
           fill
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover ${className}`}
         />
       </div>
     </div>

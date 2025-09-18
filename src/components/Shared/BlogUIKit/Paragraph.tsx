@@ -1,4 +1,5 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 interface ParagraphProps {
   children: string | React.ReactNode;
@@ -26,9 +27,11 @@ const Paragraph = ({
 }: ParagraphProps) => {
   return (
     <p
-      className={`
-    my-3 text-lg text-wrap
-    ${getJustify(justify)} ${className}`}
+      className={twMerge(
+        "my-3 text-lg text-wrap", // defaults
+        getJustify(justify),
+        className // user-provided classes
+      )}
     >
       {children}
     </p>

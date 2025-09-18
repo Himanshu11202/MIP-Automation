@@ -12,8 +12,53 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-poppins)", "sans-serif"], // Make Poppins default
+      },
       colors: {
         trueGray: colors.neutral,
+        // light: {
+        //   background: "#FFFFFF",
+        //   "background-secondary": "#F8FAFC",
+        //   "background-muted": "#E0F2FE",
+        //   foreground: "#0F172A",
+        //   "foreground-secondary": "#334155",
+        //   "foreground-muted": "#64748B",
+        //   card: "#FFFFFF",
+        //   "card-foreground": "#0F172A",
+        //   border: "#E2E8F0",
+        //   input: "#F1F5F9",
+        //   ring: "#0EA5E9",
+        //   primary: "#0EA5E9",
+        //   "primary-foreground": "#FFFFFF",
+        //   secondary: "#F1F5F9",
+        //   "secondary-foreground": "#0F172A",
+        //   success: "#10B981",
+        //   warning: "#F59E0B",
+        //   error: "#EF4444",
+        //   info: "#0EA5E9",
+        // },
+        // dark: {
+        'background': '#111827',
+        'background-secondary': '#1F2937',
+        'background-muted': '#064E3B',
+        'foreground': '#F9FAFB',
+        'foreground-secondary': '#E5E7EB',
+        'foreground-muted': '#9CA3AF',
+        'card': '#1F2937',
+        'card-foreground': '#F9FAFB',
+        'border': '#374151',
+        'input': '#4B5563',
+        'ring': '#34D399',
+        'primary': '#34D399',
+        'primary-foreground': '#111827',
+        'secondary': '#4B5563',
+        'secondary-foreground': '#F9FAFB',
+        'success': '#22C55E',
+        'warning': '#EAB308',
+        'error': '#EF4444',
+        'info': '#34D399',
+        // },
         app: {
           // add app specific colors
 
@@ -45,10 +90,6 @@ module.exports = {
       // fontFamily: {
       //   inter: ["var(--font-inter)"],
       // },
-    },
-    fontFamily: {
-      sans: ["Inter", ...defaultTheme.fontFamily.sans],
-      stock: [defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],

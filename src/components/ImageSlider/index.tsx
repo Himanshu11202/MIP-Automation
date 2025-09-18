@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, EffectCreative, Pagination } from "swiper/modules";
 
@@ -21,6 +22,7 @@ const ImageSlider = () => {
         className="mySwiper h-full w-full"
         spaceBetween={50}
         slidesPerView={1}
+        direction="horizontal"
         loop={true}
         grabCursor={true}
         modules={[EffectCreative, Autoplay, Pagination]}

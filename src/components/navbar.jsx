@@ -1,8 +1,6 @@
-
 "use client";
 
 import Link from "next/link";
-import ThemeChanger from "./DarkSwitch";
 import {
   Disclosure,
   DisclosureButton,
@@ -11,6 +9,7 @@ import {
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import ThemeChanger from "./DarkSwitch";
 
 export default function Navbar() {
   const navigation = [
@@ -64,27 +63,26 @@ export default function Navbar() {
         }, [open]);
 
         return (
-          <div className="relative w-full bg-gray-100 dark:bg-gray-900 shadow-md">
+          <div className="fixed top-0 z-50 backdrop-blur-sm w-full bg-[#00000070] shadow-md">
             <nav className="w-full flex flex-wrap items-center justify-between px-4 lg:px-6 py-2 lg:py-3">
               {/* Logo and Name */}
               <div className="flex items-center justify-between w-full lg:w-auto">
                 <Link href="/" className="flex items-center space-x-3">
                   <img
-                    src="/img/images/logo-155x177.png"
+                    src="/logo-white.png"
                     alt="Logo"
-                    className="w-12 aspect-square object-cover"
+                    className="h-12  object-cover"
                   />
-                  <div className="text-left">
+                  {/* <div className="text-left">
                     <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight leading-none">
                       <span className="text-sky-400">MECH IT </span>
                       <span className="text-rose-400">POSSIBLE</span>
                     </h1>
-                  </div>
+                  </div> */}
                 </Link>
 
                 {/* Mobile Right Side Buttons */}
                 <div className="lg:hidden ml-2 flex items-center gap-4">
-                  <ThemeChanger />
                   <DisclosureButton
                     aria-label="Toggle Menu"
                     className="px-2 py-1 text-gray-600 dark:text-gray-300 hover:text-indigo-600 focus:outline-none"
