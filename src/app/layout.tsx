@@ -33,7 +33,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${poppins.variable} dark`}
     >
-      <body data-theme="dark" className="scroll-smooth bg-neutral-900">
+      <body data-theme="dark" className="scroll-smooth dark:bg-neutral-900">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Navbar />
           {children}
