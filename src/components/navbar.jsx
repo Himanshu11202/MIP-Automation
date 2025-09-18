@@ -9,6 +9,7 @@ import {
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import ThemeChanger from "./DarkSwitch";
 
 export default function Navbar() {
   const navigation = [
@@ -131,6 +132,7 @@ export default function Navbar() {
                   >
                     Contact Us
                   </Link>
+                  <ThemeChanger />
                 </div>
               </div>
             </nav>
