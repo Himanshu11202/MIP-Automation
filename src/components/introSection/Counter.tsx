@@ -53,7 +53,7 @@ export default function Counter({
   );
 
   return (
-    <span className={className} ref={countRef}>
+    <span className={`text-white ${className}`} ref={countRef}>
       {start}
     </span>
   );

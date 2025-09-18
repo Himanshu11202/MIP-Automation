@@ -116,7 +116,7 @@ export default function Navbar() {
                     <li key={index}>
                       <Link
                         href={item.link}
-                        className="text-gray-700 dark:text-gray-300 hover:text-indigo-700 dark:hover:text-indigo-400 font-semibold transition duration-300"
+                        className="text-gray-400 dark:text-gray-300 hover:text-indigo-700 dark:hover:text-indigo-400 font-semibold transition duration-300"
                       >
                         {item.name}
                       </Link>

@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className="relative mt-8 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300">
       {/* Pre-footer CTA */}
-      <div className="bg-gray-200 dark:bg-gray-700">
+      {/* <div className="bg-gray-200 dark:bg-gray-700">
         <Container>
           <div className="flex flex-col sm:flex-row items-center justify-between py-1 lg:py-6">
             <div className="text-lg text-center sm:text-left mb-4 sm:mb-0">
@@ -20,7 +20,7 @@ export default function Footer() {
             </Link>
           </div>
         </Container>
-      </div>
+      </div> */}
 
       <Container>
         <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto lg:grid-cols-12">
