@@ -28,6 +28,8 @@ import CoustomerFeedBack from "@/components/coustomerFeedback";
 import ImageElement from "@/components/ImageSlider/ImageElement";
 import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/introSection";
+import Gallery from "@/components/Gallery"; // gallery sectionn
+
 
 const Home = () => {
   return (
@@ -48,10 +50,14 @@ const Home = () => {
       </section>
       <section className="w-screen h-screen bg-background-muted relative px-16 md:px-36 lg:px-56 flex justify-center  items-center">
         <IntroSection />
+        
       </section>
+      
       <section className="my-4">
         <IntroCards />
       </section>
+             {/* ✅ Gallery Section Added */}
+      <Gallery />
       <section id="coustomer-feedback" className="w-full mx-auto px-8 ">
         <SectionTitle
           pretitle="coustomer feedback"
@@ -61,6 +67,8 @@ const Home = () => {
         />
         <CoustomerFeedBack />
       </section>
+
+
       <Faq />
       <Cta />
       <PopupWidget />
