@@ -1,10 +1,18 @@
 import React from "react";
 import Counter from "./Counter";
 
-const Card = ({ title = "no title" }: { title: string }) => {
+const Card = ({
+  title = "no title",
+  start = 0,
+  end = 100,
+}: {
+  title: string;
+  start?: number;
+  end?: number;
+}) => {
   return (
     <div className="w-full flex flex-col justify-center items-center py-8">
-      <Counter className="text-7xl font-bold " />
+      <Counter className="text-7xl font-bold " start={start} end={end} />
       <h2 className="uppercase text-2xl text-neutral-300">{title}</h2>
     </div>
   );

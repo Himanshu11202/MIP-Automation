@@ -36,12 +36,13 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="w-screen h-screen relative bg-neutral-900">
-        {/* <ImageSlider /> */}
-        <ImageElement
-          desktopImage="/img/background-desktop.jpg"
-          className="opacity-20 bg-neutral-900"
-        />
+      <section className="w-screen h-screen relative bg-white flex jc mt-10">
+        <div className="w-4/5 h-4/5 bg-neutral-900 mx-auto my-auto relative rounded-3xl overflow-hidden">
+          <ImageElement
+            desktopImage="/img/background-desktop.jpg"
+            className="opacity-20"
+          />
+        </div>
         <div className="absolute top-0 w-full h-full px-16 md:px-36 lg:px-56 flex justify-start  items-center">
           <HeroSection />
         </div>
