@@ -61,6 +61,12 @@ const galleryData = [
     title: "Office Event 10",
     description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia."
   },
+    { 
+    src: "/gallery/img10.jpg", 
+    alt: "Office Event 10",
+    title: "Office Event 10",
+    description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia."
+  },
 ];
 
 export default galleryData;
