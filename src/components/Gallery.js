@@ -19,7 +19,7 @@ export default function Gallery() {
       </div>
 
       {/* Horizontal Scrollable Gallery */}
-      <div className="flex overflow-x-auto gap-6 py-4 cursor-grab scrollbar-hide">
+      <div className="flex overflow-x-auto gap-6 py-20 cursor-grab scrollbar-hide">
         {galleryData.map((item, index) => (
           <div
             key={index}
@@ -59,11 +59,10 @@ export default function Gallery() {
           
       `}</style>
       
-      <div
-          className="mx-auto mb-10px"
-          style={{ width: "1300px", height: "4px", backgroundColor: "#047857" }}
-        ></div>
+
     </section>
+
+     
     
     
   );
