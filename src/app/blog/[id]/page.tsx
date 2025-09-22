@@ -16,7 +16,7 @@ const page = async ({ params }: { params: { id: string } }) => {
 
   return (
     <>
-      <article className="w-full p-8 flex flex-col justify-center items-center dark:bg-trueGray-900">
+      <article className="w-full p-8 mt-nav flex flex-col justify-center items-center dark:bg-trueGray-900">
         <Image src={blog.img} alt={blog.alt} className="object-cover" />
         <section className="w-full max-w-5xl">
           <Title>{blog.title}</Title>

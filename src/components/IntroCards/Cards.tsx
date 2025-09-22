@@ -9,16 +9,16 @@ interface IntroCardsProps {
 
 const Cards = ({ Icon, title, description }: IntroCardsProps) => {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:bg-blue-50 dark:hover:bg-gray-700 cursor-pointer transition-colors duration-150">
+    <div className="w-full h-full flex flex-col justify-center items-center max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-yellow-50  cursor-pointer transition-colors duration-150">
       <div className="mb-4">
-        <Icon className="w-16 aspect-square text-blue-600" />
+        <Icon className="w-16 aspect-square text-yellow-600" />
       </div>
       <div>
         <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
           {title}
         </h5>
       </div>
-      <p className="mb-3 text-center font-normal text-gray-500 dark:text-gray-400">
+      <p className="mb-3 text-center font-normal text-gray-500">
         {description}
       </p>
     </div>

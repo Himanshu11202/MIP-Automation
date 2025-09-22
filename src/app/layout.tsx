@@ -37,7 +37,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Navbar />
           {children}
-          <SocialButtons />
+          {/* <SocialButtons /> */}
           <Footer />
         </ThemeProvider>
       </body>

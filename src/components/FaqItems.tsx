@@ -17,9 +17,9 @@ function FaqItem({ question, answer }: FaqItemProps) {
     <Disclosure as="div" className="mb-5">
       <DisclosureButton className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200 group">
         <span>{question}</span>
-        <ChevronDownIcon className="w-5 h-5 text-indigo-500 group-data-[open]:rotate-180 transform transition-transform duration-200" />
+        <ChevronDownIcon className="w-5 h-5 text-secondary group-data-[open]:rotate-180 transform transition-transform duration-200" />
       </DisclosureButton>
-      <DisclosurePanel className="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
+      <DisclosurePanel className="px-4 pt-4 pb-2 bg-neutral-50 rounded-lg text-gray-500 mt-2">
         {answer}
       </DisclosurePanel>
     </Disclosure>

@@ -3,37 +3,40 @@ import ClientSlider from "./ClientSlider";
 import Testimonials from "./Testimonials";
 
 const CoustomerFeedBack = () => {
-  const CoustomerFeedBackData = [
+  const CustomerFeedbackData = [
     {
-      name: "Abc",
-      position: "xyz",
+      name: "Alice Johnson",
+      position: "CEO, TechSolutions",
       feedback:
-        "lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit",
+        "MIP Automations transformed our production line! The team’s expertise in design and development made implementation seamless. Highly recommended for any automation project.",
     },
     {
-      name: "Abc",
-      position: "xyz",
+      name: "Rahul Verma",
+      position: "Operations Manager, IndustroTech",
       feedback:
-        "lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit",
+        "The automation solutions provided by MIP have significantly reduced manual errors and increased efficiency. Their team is professional and responsive throughout the process.",
     },
     {
-      name: "Abc",
-      position: "xyz",
+      name: "Sofia Martinez",
+      position: "Project Lead, SmartBuild",
       feedback:
-        "lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit lorem epsum dior amit",
+        "Working with MIP was a pleasure. They understood our requirements perfectly and delivered a custom automation solution on time. The quality and attention to detail were impressive.",
     },
     {
-      name: "Abc",
-      position: "xyz",
-      feedback: "lorem epsum dior amit",
+      name: "Liam Smith",
+      position: "Founder, GreenWorks",
+      feedback:
+        "Their innovative approach to automation helped us scale our operations quickly. The team is knowledgeable and always available to provide support whenever needed.",
     },
     {
-      name: "Abc",
-      position: "xyz",
-      feedback: "lorem epsum dior amit",
+      name: "Priya Kapoor",
+      position: "Production Head, AutoMakers Inc.",
+      feedback:
+        "We were struggling with workflow bottlenecks, and MIP Automations provided a solution that streamlined our entire process. Truly a game-changer for our production efficiency.",
     },
   ];
-  return <ClientSlider data={CoustomerFeedBackData} />;
+
+  return <ClientSlider data={CustomerFeedbackData} />;
   // return <Testimonials data={CoustomerFeedBackData} />;
 };
 

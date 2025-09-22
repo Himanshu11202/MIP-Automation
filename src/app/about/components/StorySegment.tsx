@@ -26,30 +26,33 @@ const StorySegment = ({
 }: StorySegmentProps) => {
   const container = useRef<HTMLDivElement>(null);
 
+  const initialX = align === "left" ? -100 : align === "right" ? 100 : 0;
+  gsap.set(container.current, { opacity: 0, x: initialX });
+
   useGSAP(
     () => {
+      if (!container.current) return;
       const el = container.current;
-      const timeline = gsap.timeline({
+
+      const initialX = align === "left" ? -100 : align === "right" ? 100 : 0;
+
+      // Set initial state
+      gsap.set(el, { opacity: 0, x: initialX });
+
+      // Fade in when entering
+      gsap.to(el, {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power2.out",
         scrollTrigger: {
           trigger: el,
-          start: "top 80%",
-          end: "top 50%",
-          onEnter: () => {
-            gsap.to(el, {
-              opacity: 1,
-              x: 0,
-              duration: 1, // Duration when entering
-              ease: "power2.out",
-            });
-          },
-          onLeaveBack: () => {
-            gsap.to(el, {
-              opacity: 0,
-              x: align === "left" ? -100 : 100,
-              duration: 0.3, // Duration when leaving
-              ease: "power1.inOut",
-            });
-          },
+          start: "top 80%", // start when top of element reaches 80% of viewport
+          toggleActions: "play none none reverse",
+          // play: when scrolling down and entering
+          // none: do nothing on leave
+          // none: do nothing on enter back
+          // reverse: fade out when scrolling back past start
         },
       });
     },

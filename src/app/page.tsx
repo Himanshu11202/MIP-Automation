@@ -8,7 +8,6 @@ import Benefits from "@/components/benefits";
 import Cta from "@/components/cta";
 import Faq from "@/components/faq";
 import PopupWidget from "@/components/popupWidget";
-
 //import dynamic from "next/dynamic";
 
 // const Video = dynamic(() => import("../components/video"));
@@ -36,15 +35,15 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="w-screen h-screen relative bg-white flex jc mt-10">
-        <div className="w-4/5 h-4/5 bg-neutral-900 mx-auto my-auto relative rounded-3xl overflow-hidden">
+      <section className="w-screen h-screen relative bg-white flex jc mt-nav">
+        <div className="w-11/12 md:w-4/5 h-4/5 bg-neutral-900 mx-auto my-auto relative rounded-3xl overflow-hidden">
           <ImageElement
             desktopImage="/img/background-desktop.jpg"
             className="opacity-20"
           />
-        </div>
-        <div className="absolute top-0 w-full h-full px-16 md:px-36 lg:px-56 flex justify-start  items-center">
-          <HeroSection />
+          <div className="absolute top-0 w-full h-full px-8 md:px-16 lg:px-36 flex justify-start  items-center">
+            <HeroSection />
+          </div>
         </div>
       </section>
       <section className="w-screen h-screen bg-background-muted relative px-16 md:px-36 lg:px-56 flex justify-center  items-center">
@@ -53,7 +52,7 @@ const Home = () => {
       <section className="my-4">
         <IntroCards />
       </section>
-      <section id="coustomer-feedback" className="w-full mx-auto px-8 ">
+      <section id="coustomer-feedback" className="w-full mx-auto px-8 my-8">
         <SectionTitle
           pretitle="coustomer feedback"
           title="what our coustomers says"
@@ -62,9 +61,17 @@ const Home = () => {
         />
         <CoustomerFeedBack />
       </section>
-      <Faq />
+      <section id="coustomer-feedback" className="w-full mx-auto px-8 my-8">
+        <SectionTitle
+          pretitle="Frequently asked questions"
+          title="FAQs"
+          align="left"
+          zeroXMarginPadding
+        />
+        <Faq />
+      </section>
       <Cta />
-      <PopupWidget />
+      {/* <PopupWidget /> */}
     </>
   );
 };
