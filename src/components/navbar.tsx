@@ -19,6 +19,7 @@ export default function Navbar() {
     { name: "Automation", link: "/automation" },
     { name: "Training", link: "/training" },
     { name: "Blog", link: "/blog" },
+    { name: "Developers", link: "/developers" },
     { name: "Contact Us", link: "/contact" },
   ];
 
