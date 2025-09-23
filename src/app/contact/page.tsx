@@ -92,7 +92,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="w-screen min-h-[90vh] h-fit bg-white flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-14 px-6 py-6 md:px-16 md:py-12 lg:py-14 overflow-hidden lg:h-[90vh] relative dark:bg-trueGray-900">
+    <div className="w-screen min-h-[90vh] h-fit bg-white flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-14 px-6 py-6 md:px-16 md:py-12 lg:py-14 overflow-hidden lg:h-[90vh] relative dark:bg-trueGray-900 mt-24">
       <div className="w-full h-full py-6 tb:py-12 lg:py-0 flex flex-col justify-center lg:justify-between gap-12 lg:gap-4 ">
         <div>
           <h1 className="capitalize text-4xl tb:text-6xl font-bold">

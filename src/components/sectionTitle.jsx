@@ -21,7 +21,7 @@ export default function SectionTitle({
       `}
     >
       {pretitle && (
-        <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
+        <div className="text-sm font-bold tracking-wider text-yellow-600 uppercase">
           {pretitle}
         </div>
       )}

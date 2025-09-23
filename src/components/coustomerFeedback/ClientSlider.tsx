@@ -35,7 +35,7 @@ const ClientSlider = ({ data }: ClientSliderProps) => {
           slidesPerView: 1,
         },
 
-        "480": {
+        "600": {
           slidesPerView: 2,
         },
 

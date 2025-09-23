@@ -33,11 +33,11 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${poppins.variable} dark`}
     >
-      <body data-theme="dark" className="scroll-smooth dark:bg-neutral-900">
+      <body className="scroll-smooth dark:bg-neutral-900 w-screen overflow-x-hidden">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Navbar />
           {children}
-          <SocialButtons />
+          {/* <SocialButtons /> */}
           <Footer />
         </ThemeProvider>
       </body>

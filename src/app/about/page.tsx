@@ -46,7 +46,7 @@ const AboutUs = () => {
       <SectionTitle
         title="About our story"
         align="left"
-        className="mt-6 md:px-14 "
+        className="mt-36 md:px-14 "
         zeroYMarginPadding
       />
       {storyData.map((item, index) => (

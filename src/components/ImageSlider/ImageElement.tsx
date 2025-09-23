@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 export interface ImageElementProps {
   desktopImage: string;
@@ -15,14 +16,14 @@ const ImageElement = ({
 }: ImageElementProps) => {
   mobileImage = mobileImage ?? desktopImage; // use desktop image if mobile image not available
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full overflow-hidden">
       {/* Desktop image */}
       <div className="hidden md:block w-full h-full">
         <Image
           src={desktopImage}
           alt={alt || "Desktop version"}
           fill // required
-          className={`w-full h-full object-cover ${className}`}
+          className={twMerge("w-full h-full object-cover ", className)}
         />
       </div>
 

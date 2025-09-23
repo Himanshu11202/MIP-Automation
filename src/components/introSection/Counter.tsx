@@ -38,9 +38,10 @@ export default function Counter({
                 ease: "power1.out",
                 onUpdate: () => {
                   if (countRef.current) {
-                    countRef.current.textContent = Math.floor(
-                      obj.val
-                    ).toString();
+                    const valStr = Math.floor(obj.val).toString();
+                    countRef.current.innerHTML = `<span class="text-secondary">${
+                      valStr[0]
+                    }</span>${valStr.substring(1)}`;
                   }
                 },
               });
@@ -54,7 +55,8 @@ export default function Counter({
 
   return (
     <span className={`text-white ${className}`} ref={countRef}>
-      {start}
+      <span className="text-secondary">{start.toString()[0]}</span>
+      <span>{start.toString().substring(1)}</span>
     </span>
   );
 }

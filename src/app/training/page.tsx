@@ -1,40 +1,41 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
 const trainings = [
   {
-    title: 'Industrial Automation Training',
+    title: "Industrial Automation Training",
     description:
-      'Learn PLCs, SCADA, HMI, and control panels with hands-on industrial hardware.',
-    imageUrl: '/img/industrial-automation.jpg',
+      "Learn PLCs, SCADA, HMI, and control panels with hands-on industrial hardware.",
+    imageUrl: "/img/industrial-automation.jpg",
   },
   {
-    title: 'Embedded Systems Training',
-    description: 'Microcontrollers: Arduino, PIC, ARM with C programming.',
-    imageUrl: '/img/embedded-systems.jpg',
+    title: "Embedded Systems Training",
+    description: "Microcontrollers: Arduino, PIC, ARM with C programming.",
+    imageUrl: "/img/embedded-systems.jpg",
   },
   {
-    title: 'IoT Training',
-    description: 'NodeMCU, MQTT, sensors, and cloud platforms like AWS & Blynk.',
-    imageUrl: '/img/iot-training.jpg',
-  },
-  {
-    title: 'Robotics Training',
+    title: "IoT Training",
     description:
-      'Robots: line follower, Bluetooth-controlled, and obstacle avoiders.',
-    imageUrl: '/img/robotics.jpg',
+      "NodeMCU, MQTT, sensors, and cloud platforms like AWS & Blynk.",
+    imageUrl: "/img/iot-training.jpg",
   },
   {
-    title: 'Python & Machine Learning',
+    title: "Robotics Training",
     description:
-      'Python, NumPy, Pandas, ML algorithms like linear regression, decision trees, etc.',
-    imageUrl: '/img/python-ml.jpg',
+      "Robots: line follower, Bluetooth-controlled, and obstacle avoiders.",
+    imageUrl: "/img/robotics.jpg",
   },
   {
-    title: 'Live Projects & Certification',
-    description: 'Complete training with live projects and a certification.',
-    imageUrl: '/img/live-projects.jpg',
+    title: "Python & Machine Learning",
+    description:
+      "Python, NumPy, Pandas, ML algorithms like linear regression, decision trees, etc.",
+    imageUrl: "/img/python-ml.jpg",
+  },
+  {
+    title: "Live Projects & Certification",
+    description: "Complete training with live projects and a certification.",
+    imageUrl: "/img/live-projects.jpg",
   },
 ];
 
@@ -50,9 +51,9 @@ export default function TrainingPage() {
           Training Programs
         </h1>
         <p className="max-w-3xl text-lg text-center mt-6 bg-black bg-opacity-50 p-4 rounded-lg shadow-lg">
-          Welcome to the world of educational engineering INNOVATION projects. This site offers
-          solutions about final year educational project work for DIPLOMA/BE/ME/MTECH/PhD aspirants
-          specifically related to—
+          Welcome to the world of educational engineering INNOVATION projects.
+          This site offers solutions about final year educational project work
+          for DIPLOMA/BE/ME/MTECH/PhD aspirants specifically related to—
         </p>
       </section>
 
@@ -74,11 +75,13 @@ export default function TrainingPage() {
                 <h2 className="text-center text-xl font-bold mb-4 text-gray-900 dark:text-white">
                   {title}
                 </h2>
-                <p className="text-gray-700 dark:text-gray-300 flex-grow">{description}</p>
+                <p className="text-gray-700 dark:text-gray-300 flex-grow">
+                  {description}
+                </p>
 
                 {/* 🔵 Read More Button */}
                 <div className="mt-6 text-center">
-                  <button className="text-sm text-indigo-600 font-medium hover:underline">
+                  <button className="text-sm text-secondary font-medium hover:underline">
                     Read More
                   </button>
                 </div>
