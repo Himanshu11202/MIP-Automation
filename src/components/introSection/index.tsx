@@ -7,13 +7,13 @@ import Card from "./Card";
 const IntroSection = () => {
   return (
     <div className="my-20">
-      <p className="uppercase text-center font-semibold text-foreground-muted text-2xl md:text-4xl">
+      <p className="uppercase text-center font-semibold text-foreground-muted text-lg md:text-2xl">
         hello there
       </p>
-      <h1 className="uppercase text-center font-semibold text-foreground text-5xl md:text-7xl">
+      <h1 className="uppercase text-center font-semibold text-foreground text-3xl md:text-5xl">
         we are mip
       </h1>
-      <Paragraph className="text-xl md:text-3xl text-white">
+      <Paragraph className="text-base md:text-2xl text-white">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
         repellendus cupiditate quis reiciendis! Quasi officiis sit voluptas.
         Cupiditate beatae, est dolor id nulla eum, provident nisi debitis saepe
