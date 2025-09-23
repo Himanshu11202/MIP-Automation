@@ -8,8 +8,8 @@ import { blogs } from "@/app/blog/blogs/blogs";
 const Blog = () => {
   return (
     <>
-      <SectionTitle title="Blogs" align="left" className="mt-24" />
-      <div className="w-full px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 ">
+      <SectionTitle title="Blogs" align="left" className="mt-[55px]" />
+      <div className="w-full px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
         {blogs.map((blog) => (
           <Link key={blog.id} href={`/blog/${blog.id}`}>
             <div className="bg-trueGray-200 dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">

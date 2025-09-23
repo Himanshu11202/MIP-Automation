@@ -47,7 +47,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="w-screen h-screen bg-background-muted relative px-16 md:px-36 lg:px-56 flex justify-center  items-center">
+      <section className="w-screen min-h-screen bg-background-muted relative px-16 md:px-36 lg:px-56 flex justify-center  items-center">
         <IntroSection />
       </section>
 
