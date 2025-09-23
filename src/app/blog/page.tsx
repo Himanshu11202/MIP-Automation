@@ -4,11 +4,14 @@ import Link from "next/link";
 import SectionTitle from "@/components/sectionTitle";
 import ElipsisText from "@/components/Shared/Text/ElipsisText";
 import { blogs } from "@/app/blog/blogs/blogs";
+import { Title } from "@/components/Shared/BlogUIKit";
 
 const Blog = () => {
   return (
     <>
-      <SectionTitle title="Blogs" align="left" className="mt-[55px]" />
+      <Title align="center" className="px-10 py-4">
+        Blogs
+      </Title>
       <div className="w-full px-12 lg:px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
         {blogs.map((blog) => (
           <Link key={blog.id} href={`/blog/${blog.id}`}>

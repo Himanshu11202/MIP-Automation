@@ -1,35 +1,28 @@
-
 "use client"; // Required for hover and client interactivity
 
 import Image from "next/image";
 import galleryData from "../../../data/galleryData";
+import SectionTitle from "../sectionTitle";
 
 export default function Gallery() {
   return (
-    <section className="bg-white py-16 px-6">
+    <section className="bg-white py-16 px-6 overflow-visible">
       {/* Heading */}
-      <div className="text-center mb-10">
-        <div
-          className="mx-auto mb-10"
-          style={{ width: "1300px", height: "4px", backgroundColor: "#047857" }}
-        ></div>
-        <h2 className="text-5xl font-extrabold tracking-wide text-yellow-300 font-serif mb-6">
-          MIP Gallery
-        </h2>
-        
-      </div>
+      <SectionTitle title="Gallery" pretitle="Explore Our Collection" />
 
       {/* Horizontal Scrollable Gallery */}
-      <div className="flex overflow-x-auto gap-6 py-20 cursor-grab scrollbar-hide">
+      <div className="flex overflow-x-scroll overflow-visible gap-6 py-20 cursor-grab scrollbar-hide">
         {galleryData.map((item, index) => (
           <div
             key={index}
             className={`flex-shrink-0 relative w-80 h-80 md:w-80 md:h-82 transform transition-transform duration-500 hover:scale-110 overflow-visible origin-center group
-              ${index % 3 === 0
-                ? "rotate-3 translate-y-2"
-                : index % 3 === 1
-                ? "-rotate-3 -translate-y-2"
-                : "rotate-6 translate-y-1"}`}
+              ${
+                index % 3 === 0
+                  ? "rotate-3 translate-y-2"
+                  : index % 3 === 1
+                  ? "-rotate-3 -translate-y-2"
+                  : "rotate-6 translate-y-1"
+              }`}
           >
             {/* Image */}
             <Image
@@ -57,14 +50,7 @@ export default function Gallery() {
           -ms-overflow-style: none;
           scrollbar-width: none;
         }
-          
       `}</style>
-      
-
     </section>
-
-     
-    
-    
   );
 }

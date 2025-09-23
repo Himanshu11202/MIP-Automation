@@ -15,10 +15,10 @@ export default function Navbar() {
   const navigation = [
     { name: "Home", link: "/" },
     { name: "Products", link: "/products" },
-    { name: "About Us", link: "/about" },
     { name: "Automation", link: "/automation" },
     { name: "Training", link: "/training" },
     { name: "Blog", link: "/blog" },
+    { name: "About Us", link: "/about" },
     { name: "Developers", link: "/developers" },
     { name: "Contact Us", link: "/contact" },
   ];
@@ -65,8 +65,8 @@ export default function Navbar() {
   });
 
   return (
-    <section className="maincontainer h-auto w-screen fixed top-0 left-0 z-50 flex justify-center items-center ">
-      <nav className="h-auto w-full py-4 px-8 mx-16 my-4 md:mx-24 flex justify-between items-center rounded-full bg-white shadow-2xl">
+    <section className="maincontainer h-auto w-screen relative z-50 flex justify-center items-center ">
+      <nav className="h-auto w-full py-4 px-8 flex justify-between items-center bg-white shadow-lg">
         {/* Logo */}
         <Link
           href="/"
@@ -76,15 +76,15 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <ul className="hidden lg:flex justify-center items-center gap-3">
+        <ul className="hidden lg:flex justify-center items-center gap-4">
           {navigation.map((item, index) => {
             const isActive = pathname === item.link;
             return (
-              <li key={index} className="hover:underline">
+              <li key={index} className="">
                 {item.link === "/contact" ? (
                   <Link
                     href={item.link}
-                    className={`bg-green-200 hover:bg-green-300 transition-all duration-150 px-4 py-3 rounded-full ${
+                    className={`bg-green-200  hover:bg-green-300 transition-all duration-150 px-4 py-3 rounded-full ${
                       isActive && "text-green-800 font-semibold"
                     }`}
                   >
@@ -93,7 +93,9 @@ export default function Navbar() {
                 ) : (
                   <Link
                     href={item.link}
-                    className={`${isActive && "text-green-800 font-semibold"}`}
+                    className={`hover:underline ${
+                      isActive && " text-green-800 font-semibold"
+                    }`}
                   >
                     {item.name}
                   </Link>

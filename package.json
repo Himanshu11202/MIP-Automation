@@ -4,15 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build --no-lint",
     "start": "next start",
     "lint": "next lint"
   },
-  "scripts": {
-  "dev": "next dev",
-  "build": "next build --no-lint",
-  "start": "next start"
-},
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@headlessui/react": "^2.2.6",

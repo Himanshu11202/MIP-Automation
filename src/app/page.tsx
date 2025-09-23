@@ -36,7 +36,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="w-screen h-screen relative bg-white flex jc mt-nav">
+      <section className="w-screen h-[90vh] z-0 relative bg-white flex justify-center">
         <div className="w-11/12 md:w-4/5 h-4/5 bg-neutral-900 mx-auto my-auto relative rounded-3xl overflow-hidden">
           <ImageElement
             desktopImage="/img/background-desktop.jpg"
@@ -73,7 +73,9 @@ const Home = () => {
         />
         <Faq />
       </section>
-      <Cta />
+      <section className="w-full flex justify-center items-center">
+        <Cta />
+      </section>
       {/* <PopupWidget /> */}
     </>
   );

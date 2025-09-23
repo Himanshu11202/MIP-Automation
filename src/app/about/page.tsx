@@ -1,6 +1,7 @@
 import React from "react";
 import StorySegment from "./components/StorySegment";
 import SectionTitle from "@/components/sectionTitle";
+import { Title } from "@/components/Shared/BlogUIKit";
 
 const AboutUs = () => {
   const storyData = [
@@ -43,12 +44,9 @@ const AboutUs = () => {
   ];
   return (
     <>
-      <SectionTitle
-        title="About our story"
-        align="left"
-        className="mt-36 md:px-14 "
-        zeroYMarginPadding
-      />
+      <Title align="center" className="mt-10">
+        about our story
+      </Title>
       {storyData.map((item, index) => (
         <StorySegment
           key={index}

@@ -6,13 +6,19 @@ interface TitleProps {
   className?: string;
 }
 
-const Title = ({ children, align = "left", className }: TitleProps) => {
+const Title = ({ children, align = "left", className = "" }: TitleProps) => {
   return (
     <h1
       className={`
     text-4xl font-bold capitalize my-6
     md:text-5xl
-    ${align === "left" ? "self-start" : align === "right" ? "self-end" : ""}
+    ${
+      align === "left"
+        ? "text-left"
+        : align === "right"
+        ? "text-right"
+        : "text-center"
+    }
 
     ${className}`}
     >

@@ -34,7 +34,7 @@ export default function DeveloperCard({
       {/* Right: Info */}
       <div className="flex-1 text-center md:text-left">
         <h3 className="text-4xl font-bold text-gray-800">{name}</h3>
-        <p className="text-yellow-500 font-semibold text-xl mt-2">{role}</p>
+        <p className="text-secondary font-semibold text-xl mt-2">{role}</p>
         <p className="text-gray-700 mt-3 text-lg">{skills}</p>
         <p className="text-gray-600 mt-5 text-justify text-base">{info}</p>
 
@@ -42,7 +42,7 @@ export default function DeveloperCard({
         <div className="flex flex-wrap gap-5 mt-8 justify-center md:justify-start">
           <a
             href={email ? `mailto:${email}` : "#"}
-            className="bg-yellow-500 text-white px-10 py-3 rounded-full hover:bg-yellow-600 transition font-semibold text-lg"
+            className="bg-primary text-textPrimary hover:bg-textPrimaryLight px-10 py-3 rounded-full  transition font-semibold text-lg"
           >
             Email
           </a>
@@ -51,7 +51,7 @@ export default function DeveloperCard({
               href={linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-yellow-500 text-white px-10 py-3 rounded-full hover:bg-yellow-600 transition font-semibold text-lg"
+              className="bg-primary text-textPrimary hover:bg-textPrimaryLight px-10 py-3 rounded-full transition font-semibold text-lg"
             >
               LinkedIn
             </a>
@@ -61,7 +61,7 @@ export default function DeveloperCard({
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-yellow-500 text-white px-10 py-3 rounded-full hover:bg-yellow-600 transition font-semibold text-lg"
+              className="bg-primary text-textPrimary hover:bg-textPrimaryLight  px-10 py-3 rounded-full transition font-semibold text-lg"
             >
               GitHub
             </a>

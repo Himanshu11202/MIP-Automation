@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from "@/components/ProductCard";
+import { Title } from "@/components/Shared/BlogUIKit";
 
 const products = [
   {
@@ -45,10 +46,10 @@ const products = [
 
 export default function ProductsPage() {
   return (
-    <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 mt-nav">
-      <h1 className="text-4xl font-extrabold text-center mb-12 text-gray-900 dark:text-white">
-        Our Products
-      </h1>
+    <main className="container mx-auto px-4 sm:px-6 lg:px-8 ">
+      <Title align="center" className="py-10">
+        our Products
+      </Title>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((product, idx) => (
           <ProductCard key={idx} {...product} />
