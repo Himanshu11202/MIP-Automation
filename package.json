@@ -12,7 +12,7 @@
     "@gsap/react": "^2.1.2",
     "@headlessui/react": "^2.2.6",
     "@heroicons/react": "^2.2.0",
-    "framer-motion": "^12.23.16",
+    "framer-motion": "^12.23.19",
     "gsap": "^3.13.0",
     "lucide-react": "^0.526.0",
     "next": "^15.4.4",
