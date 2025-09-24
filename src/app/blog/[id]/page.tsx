@@ -4,18 +4,19 @@ import { getBlog } from "@/app/blog/blogs/blogs";
 import { notFound } from "next/navigation";
 import React from "react";
 
-interface BlogPageProps {
+// Correct typing for params
+interface PageProps {
   params: {
     id: string;
   };
 }
 
-const Page = async ({ params }: BlogPageProps) => {
-  const { id } = params; 
-  const blog = getBlog(id);
+const Page = ({ params }: PageProps) => {
+  const { id } = params; // no await needed
+  const blog = getBlog(id); // synchronous fetch
 
   if (!blog) {
-    notFound();
+    notFound(); // 404 page if blog not found
   }
 
   return (
