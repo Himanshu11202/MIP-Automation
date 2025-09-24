@@ -4,8 +4,10 @@ import { getBlog } from "@/app/blog/blogs/blogs";
 import { notFound } from "next/navigation";
 import React from "react";
 
+// The props are correctly typed here. The component can be async.
 const page = async ({ params }: { params: { id: string } }) => {
-  const { id } = await params;
+  // The 'await' keyword is removed here. This is the fix.
+  const { id } = params;
   const blog = getBlog(id);
 
   if (!blog) {
