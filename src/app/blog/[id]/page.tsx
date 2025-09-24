@@ -6,14 +6,12 @@ import React from "react";
 
 // Define the correct props type inline
 type Props = {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 };
 
 // Use the correct 'Props' type
-const BlogPostPage = ({ params }: Props) => {
-  const { id } = params;
+const BlogPostPage = async ({ params }: Props) => {
+  const { id } = await params;
   const blog = getBlog(id);
 
   if (!blog) {
