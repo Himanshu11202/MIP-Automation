@@ -30,4 +30,4 @@ const Page = ({ params }: PageProps) => {
   );
 };
 
-export default Page;
+export default Page; 
