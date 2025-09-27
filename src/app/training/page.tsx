@@ -45,12 +45,12 @@ export default function TrainingPage() {
       {/* 🔵 Background Image Section */}
       <section
         className="w-full h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-white px-4"
-        style={{ backgroundImage: "url('/img/training-bg.jpg.jpg')" }}
+        style={{ backgroundImage: "url('/trainingimg (1).jpg')" }}
       >
-        <h1 className="text-6xl font-extrabold text-center drop-shadow-md text-red-600">
+        <h1 className="text-6xl font-extrabold text-center drop-shadow-md text-yellow-600">
           Training Programs
         </h1>
-        <p className="max-w-3xl text-lg text-center mt-6 bg-black bg-opacity-50 p-4 rounded-lg shadow-lg">
+        <p className="max-w-3xl text-lg text-center mt-6 bg-green-900 bg-opacity-50 p-4 rounded-lg shadow-lg">
           Welcome to the world of educational engineering INNOVATION projects.
           This site offers solutions about final year educational project work
           for DIPLOMA/BE/ME/MTECH/PhD aspirants specifically related to—

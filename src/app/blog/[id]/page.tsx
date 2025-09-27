@@ -14,10 +14,10 @@ interface PageProps {
 // Async page component
 const BlogPostPage = async ({ params }: PageProps) => {
   const { id } = params;
-  const blog = getBlog(id); // synchronous fetch
+  const blog = getBlog(id);
 
   if (!blog) {
-    notFound(); // 404 if blog not found
+    notFound();
   }
 
   return (
