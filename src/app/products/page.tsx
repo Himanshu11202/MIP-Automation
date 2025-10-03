@@ -1,48 +1,7 @@
 import React from "react";
 import ProductCard from "@/components/ProductCard";
 import { Title } from "@/components/Shared/BlogUIKit";
-
-const products = [
-  {
-    title: "Dough Making Machine",
-    description:
-      "An efficient machine for kneading dough for various food products.",
-    imageUrl: "/img/products/dough-making-machine.png",
-    videoUrl: "https://youtu.be/oO1yHCi4DY8?si=MAoNfjm-zLIt_2Re",
-  },
-  {
-    title: "Electric Kadhai",
-    description: "An efficient machine for cooking food without fire.",
-    imageUrl: "/img/products/Electric Kadhai.jpg",
-    videoUrl: "https://youtu.be/5sc1aOhTYYg?si=r8Yev62PqtclUYdZ",
-  },
-  {
-    title: "Papad Machine",
-    description: "An efficient machine for making papad.",
-    imageUrl: "/img/products/Papad machine.jpg",
-    videoUrl: "https://youtu.be/z5fGsfPsG5Y?si=0uguWzu4yg8z8nNJ",
-  },
-  {
-    title: "Coating Flouring Machine",
-    description:
-      "An efficient machine for coating the any wafers or chips with masala.",
-    imageUrl: "/img/products/Coating Flouring Machine.jpg",
-    videoUrl: "https://youtu.be/iYUsS5hp0VE?si=Q4_KhOZmAk0D-U2h",
-  },
-  {
-    title: "Potato Chips Machine",
-    description: "An efficient machine for cutting potatos to chips.",
-    imageUrl: "/img/products/Potato Chips Machine.jpg",
-    videoUrl: "https://youtu.be/_u6pXmNu9nE?si=79v080psWVzhSaHH",
-  },
-  {
-    title: "Potato Wafer Machine",
-    description: "An efficient machine for making Potato Wafers.",
-    imageUrl: "/img/products/Potato Wafer Machine.jpg",
-    videoUrl: "https://youtu.be/_u6pXmNu9nE?si=79v080psWVzhSaHH",
-  },
-  // We will add more products here
-];
+import products from "../../../data/products.json";
 
 export default function ProductsPage() {
   return (
@@ -51,9 +10,15 @@ export default function ProductsPage() {
         our Products
       </Title>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {products.map((product, idx) => (
-          <ProductCard key={idx} {...product} />
-        ))}
+        {products && products.length ? (
+          products.map((product: any, idx: number) => (
+            <ProductCard key={idx} {...product} />
+          ))
+        ) : (
+          <p className="col-span-full text-center text-muted">
+            No products available.
+          </p>
+        )}
       </div>
     </main>
   );
