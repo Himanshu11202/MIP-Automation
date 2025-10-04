@@ -68,6 +68,8 @@ const Card: FC<ServiceCardProps> = ({ image, title, description, alt }) => (
       alt={alt}
       width={600}
       height={400}
+      quality={70}
+      loading="lazy"
       className="object-cover w-full h-48"
     />
     <div className="p-6">

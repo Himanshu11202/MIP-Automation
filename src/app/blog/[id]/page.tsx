@@ -4,6 +4,18 @@ import { getBlog } from "@/app/blog/blogs/blogs";
 import { notFound } from "next/navigation";
 import React from "react";
 
+
+// Correct typing for params
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+const Page = ({ params }: PageProps) => {
+  const { id } = params; // no await needed
+  const blog = getBlog(id); // synchronous fetch
+
 // Define the correct props type inline
 type Props = {
   params: Promise<{ id: string }>;
@@ -13,9 +25,10 @@ type Props = {
 const BlogPostPage = async ({ params }: Props) => {
   const { id } = await params;
   const blog = getBlog(id);
+  
 
   if (!blog) {
-    notFound();
+    notFound(); // 404 page if blog not found
   }
 
   return (
@@ -29,4 +42,8 @@ const BlogPostPage = async ({ params }: Props) => {
   );
 };
 
+
+export default Page; 
+
 export default BlogPostPage;
+
