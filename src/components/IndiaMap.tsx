@@ -51,11 +51,7 @@ const IndiaMap: React.FC<IndiaMapProps> = ({ data }) => {
   };
 
   const handleMouseMove = (e: React.MouseEvent<SVGSVGElement>) => {
-    const bounds = e.currentTarget.getBoundingClientRect();
-    setTooltipPos({
-      x: e.clientX - bounds.left + 10, // small offset
-      y: e.clientY - bounds.top + 10,
-    });
+    setTooltipPos({ x: e.clientX + 10, y: e.clientY + 10 });
   };
 
   return (

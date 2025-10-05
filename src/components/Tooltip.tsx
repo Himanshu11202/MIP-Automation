@@ -19,6 +19,7 @@ const Tooltip: React.FC<TooltipProps> = ({ content, position }) => {
     <div
       className="absolute bg-white text-black px-4 py-2 rounded-md shadow-lg pointer-events-none"
       style={{
+        position: "fixed",
         left: position.x + 15,
         top: position.y + 15,
         zIndex: 1000,
