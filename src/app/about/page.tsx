@@ -2,7 +2,7 @@ import React from "react";
 import StorySegment from "./components/StorySegment";
 import SectionTitle from "@/components/sectionTitle";
 import { Title } from "@/components/Shared/BlogUIKit";
-
+import CoreTeam from "./components/CoreTeam";
 const AboutUs = () => {
   const storyData = [
     {
@@ -44,6 +44,10 @@ const AboutUs = () => {
   ];
   return (
     <>
+      <Title align="center" className="mt-10">
+        Our Team
+      </Title>
+      <CoreTeam />
       <Title align="center" className="mt-10">
         about our story
       </Title>
