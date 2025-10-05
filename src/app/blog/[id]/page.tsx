@@ -12,7 +12,7 @@ interface PageProps {
 }
 
 // Async page component
-const BlogPostPage = ({ params }: { params: { id: string } }) => {
+export default function BlogPostPage({ params }: { params: { id: string } }) {
   const { id } = params;
   const blog = getBlog(id);
 
@@ -29,6 +29,4 @@ const BlogPostPage = ({ params }: { params: { id: string } }) => {
       </section>
     </article>
   );
-};
-
-export default BlogPostPage; // ✅ Only one default export
+}
