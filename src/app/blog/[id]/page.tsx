@@ -4,16 +4,14 @@ import { getBlog } from "@/app/blog/blogs/blogs";
 import { notFound } from "next/navigation";
 import React from "react";
 
-// Correct typing for params
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
+// params is a Promise<{ id: string }>
+type Props = {
+  params: Promise<{ id: string }>;
+};
 
-// Async page component
-export default function BlogPostPage({ params }: { params: { id: string } }) {
-  const { id } = params;
+export default function BlogPostPage({ params }: Props) {
+  const { id } = React.use(params);
+
   const blog = getBlog(id);
 
   if (!blog) {
