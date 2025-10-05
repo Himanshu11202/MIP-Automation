@@ -22,7 +22,10 @@ export default function Gallery() {
   };
 
   return (
-    <section className="bg-white py-16 px-6 relative overflow-hidden">
+    <section
+      className="bg-white py-0   relative overflow-hidden w-screen"
+      style={{ marginLeft: "calc(-50vw + 50%)", marginRight: "calc(-50vw + 50%)" }}
+    >
       {/* Heading */}
       <SectionTitle title="Gallery" pretitle="Explore Our Collection" />
 

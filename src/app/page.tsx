@@ -19,6 +19,10 @@ import IntroSection from "@/components/introSection";
 import Gallery from "@/components/gallery/Gallery";
 import IndiaMap from "@/components/IndiaMap";
 import { storeData } from "../../data/mapData";
+import ClientsGallery from "@/components/Clints/ClientsGallery";
+
+
+
 
 const Home = () => {
   return (
@@ -57,6 +61,12 @@ const Home = () => {
         <IndiaMap data={storeData} />
        </section>
 
+
+
+      <Gallery />
+
+
+
       <section id="coustomer-feedback" className="w-full mx-auto px-8 my-8">
         <SectionTitle
           pretitle="coustomer feedback"
@@ -64,10 +74,12 @@ const Home = () => {
           align="left"
           zeroXMarginPadding
         />
-        <CoustomerFeedBack />
+        <CoustomerFeedBack />         
       </section>
-
-      <Gallery />
+            {/* Our Clients Section */}
+      <section id="our-clients" className="w-full mx-auto px-8 my-16">
+        <ClientsGallery />
+      </section>
       
       <section id="faq" className="w-full mx-auto px-8 my-8">
         <SectionTitle

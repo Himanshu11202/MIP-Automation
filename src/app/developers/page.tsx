@@ -7,9 +7,9 @@ export default function Developers() {
       name: "Himanshu Patidar",
       role: "Full Stack Developer",
       skills: "Java, Next.js, Tailwind, SQL",
-      info: "Passionate about building scalable applications. Worked on multiple projects including College Placement Management System, e-commerce apps, and automation tools. Loves learning new technologies and optimizing code for performance.Passionate about building scalable applications. Worked on multiple projects including College Placement Management System, e-commerce apps, and automation tools. Loves learning new technologies and optimizing code for performance.",
+      info: "I am a Full Stack Developer passionate about creating scalable and high-performance applications. With expertise in Java, Next.js, Tailwind, and SQL, I build solutions that are efficient, elegant, and user-focused. I love solving complex problems, optimizing code, and continuously exploring new technologies to deliver exceptional results.",
       email: "himanshu@example.com",
-      linkedin: "https://linkedin.com/in/himanshu",
+      linkedin: "https://www.linkedin.com/in/himanshu-patidar-27a0b3256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       github: "https://github.com/himanshu",
       image: "/developers/images/dev1.jpg",
     },
@@ -37,10 +37,10 @@ export default function Developers() {
 
   return (
     <section className="px-6">
-      <div className="text-center mb-10">
-        <Title align="center" className="mt-10">
-          Meet our Developers
-        </Title>
+      <div className="text-center mb-14">
+       <Title align="center" className="mt-14 text-xl text-yellow-500  font-semibold">
+        Meet our Developers
+       </Title>
         <Heading headingType="small" className="font-thin">
           Skilled and passionate developers ready to work on your projects.
         </Heading>
