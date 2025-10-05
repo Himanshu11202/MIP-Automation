@@ -12,7 +12,7 @@ interface PageProps {
 }
 
 // Async page component
-const BlogPostPage = ({ params }: PageProps) => {
+const BlogPostPage = ({ params }: { params: { id: string } }) => {
   const { id } = params;
   const blog = getBlog(id);
 
