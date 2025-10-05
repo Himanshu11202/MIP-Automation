@@ -4,22 +4,24 @@ import { getBlog } from "@/app/blog/blogs/blogs";
 import { notFound } from "next/navigation";
 import React from "react";
 
-// Define the correct props type inline
-type Props = {
-  params: Promise<{ id: string }>;
-};
+// Correct typing for params
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
 
-// Use the correct 'Props' type
-const BlogPostPage = async ({ params }: Props) => {
-  const { id } = await params;
+// Page component
+const BlogPostPage = async ({ params }: PageProps) => {
+  const { id } = params;
   const blog = getBlog(id);
 
   if (!blog) {
-    notFound();
+    notFound(); // 404 if blog not found
   }
 
   return (
-    <article className="w-full p-8 flex flex-col justify-center items-center dark:bg-trueGray-900">
+    <article className="w-full p-8 mt-nav flex flex-col justify-center items-center dark:bg-trueGray-900">
       <Image src={blog.img} alt={blog.alt} className="object-cover" />
       <section className="w-full max-w-5xl">
         <Title>{blog.title}</Title>
@@ -29,4 +31,4 @@ const BlogPostPage = async ({ params }: Props) => {
   );
 };
 
-export default BlogPostPage;
+export default BlogPostPage; // ✅ Only one default export
