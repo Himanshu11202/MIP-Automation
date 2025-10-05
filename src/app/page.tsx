@@ -19,10 +19,7 @@ import IntroSection from "@/components/introSection";
 import Gallery from "@/components/gallery/Gallery";
 import IndiaMap from "@/components/IndiaMap";
 import { storeData } from "../../data/mapData";
-import ClientsGallery from "@/components/Clints/ClientsGallery";
-
-
-
+import ClientsGallery from "@/components/Clients/ClientsGallery";
 
 const Home = () => {
   return (
@@ -51,7 +48,7 @@ const Home = () => {
         <IntroCards />
       </section>
 
-       <section id="store-locations" className="w-full mx-auto px-8 my-16">
+      <section id="store-locations" className="w-full mx-auto px-8 my-16">
         <SectionTitle
           pretitle="Our presence"
           title="Find Our Stores Across The Nation"
@@ -59,13 +56,9 @@ const Home = () => {
           zeroXMarginPadding
         />
         <IndiaMap data={storeData} />
-       </section>
-
-
+      </section>
 
       <Gallery />
-
-
 
       <section id="coustomer-feedback" className="w-full mx-auto px-8 my-8">
         <SectionTitle
@@ -74,13 +67,13 @@ const Home = () => {
           align="left"
           zeroXMarginPadding
         />
-        <CoustomerFeedBack />         
+        <CoustomerFeedBack />
       </section>
-            {/* Our Clients Section */}
+      {/* Our Clients Section */}
       <section id="our-clients" className="w-full mx-auto px-8 my-16">
         <ClientsGallery />
       </section>
-      
+
       <section id="faq" className="w-full mx-auto px-8 my-8">
         <SectionTitle
           pretitle="Frequently asked questions"
@@ -90,7 +83,7 @@ const Home = () => {
         />
         <Faq />
       </section>
-      
+
       <section className="w-full flex justify-center items-center">
         <Cta />
       </section>
