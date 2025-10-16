@@ -15,7 +15,7 @@ export default function Developers() {
       image: "/developers/images/dev1.jpg",
     },
     {
-      name: "Divyanshu patil",
+      name: "Divyanshu Patil",
       role: "Fullstack web and React-Native Developer",
       skills: "React Native, express js, mongoDB, Next Js, Typescript",
       info: "Dynamic React Native Developer with experience in building scalable mobile and web applications using React Native, React.js, Next.js, Express.js, MongoDB, TypeScript, and Redux, along with expertise in Three.js, React Three Fiber, and GSAP for immersive 3D experiences. Skilled in developing production-ready backends, implementing real-time features with WebSockets, and creating optimized, user-centric solutions such as authentication systems, geo-services, and data scraping pipelines. Strong foundation in multiple programming languages and modern tools, complemented by proven leadership, teamwork, and communication skills.",
@@ -25,14 +25,14 @@ export default function Developers() {
       image: "/developers/images/div.png",
     },
     {
-      name: "Abhijit gupta",
+      name: "Abhijit Gupta",
       role: "Backend Developer",
       skills: "Node.js, Express, MongoDB, APIs",
       info: "Passionate about building scalable applications. Worked on multiple projects including College Placement Management System, e-commerce apps, and automation tools. Loves learning new technologies and optimizing code for performance.Specializes in server-side development, APIs, and database management. Contributed to complex backend systems for web apps, ensuring scalability, security, and performance optimization.",
-      email: "vishvaraj@example.com",
-      linkedin: "https://linkedin.com/in/vishvaraj",
-      github: "https://github.com/vishvaraj",
-      image: "/developers/images/dev1.jpg",
+      email: "abhijitgupta196@gmail.com",
+      linkedin: "https://www.linkedin.com/in/abhijit-gupta-7aa537235",
+      github: "https://github.com/ABHIJIT8008",
+      image: "/developers/images/Abj.jpg",
     },
   ];
 

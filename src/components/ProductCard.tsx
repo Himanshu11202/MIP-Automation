@@ -6,11 +6,15 @@ interface ProductCardProps {
   description: string;
   imageUrl: string;
   videoUrl?: string;
+  onClick: () => void; // Add onClick handler
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ title, description, imageUrl, videoUrl }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ title, description, imageUrl, videoUrl, onClick }) => {
   return (
-    <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden w-full transition-transform duration-300 hover:scale-105">
+    <div 
+      onClick={onClick}
+      className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden w-full transition-transform duration-300 hover:scale-105 cursor-pointer"
+    >
       {/* Image Container - This will fill the entire card */}
       <div className="relative w-full h-80">
         <Image
@@ -33,14 +37,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, description, imageUrl,
           {description}
         </p>
         {videoUrl && (
-          <a
-            href={videoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-2 px-6 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold shadow-lg hover:from-purple-500 hover:to-indigo-500 transition duration-300"
-          >
+          <span className="inline-block mt-2 px-6 py-2 rounded-full bg-gradient-to-r from-green-800 to-yellow-600 text-white font-bold shadow-lg transition duration-300">
             Watch Now
-          </a>
+          </span>
         )}
       </div>
     </div>

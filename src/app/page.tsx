@@ -51,7 +51,7 @@ const Home = () => {
       <section id="store-locations" className="w-full mx-auto px-8 my-16">
         <SectionTitle
           pretitle="Our presence"
-          title="Find Our Stores Across The Nation"
+          title="Find Our Customers Across The Nation"
           align="left"
           zeroXMarginPadding
         />

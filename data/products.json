@@ -3,36 +3,286 @@
     "title": "Dough Making Machine",
     "description": "An efficient machine for kneading dough for various food products.",
     "imageUrl": "/img/products/dough-making-machine.png",
-    "videoUrl": "https://youtu.be/oO1yHCi4DY8?si=MAoNfjm-zLIt_2Re"
+    "videoUrl": "https://youtu.be/oO1yHCi4DY8?si=MAoNfjm-zLIt_2Re",
+    "category": "Food Processing",
+    "price": "₹95,000",
+    "fullDescription": "Heavy-duty dough kneader suitable for commercial kitchens and small-scale industries, ensuring uniform mixing with adjustable speed control and hygienic stainless steel contact parts.",
+    "features": [
+      "SS304 food-grade contact parts",
+      "Variable speed control",
+      "Overload protection motor",
+      "Easy tilt and discharge",
+      "Low noise operation"
+    ],
+    "specifications": [
+      "Capacity: 20–30 kg/batch",
+      "Power: 1.5–2.2 kW",
+      "Material: SS304 bowl and paddles",
+      "Dimensions: 900x600x900 mm"
+    ]
   },
   {
     "title": "Electric Kadhai",
     "description": "An efficient machine for cooking food without fire.",
     "imageUrl": "/img/products/Electric Kadhai.jpg",
-    "videoUrl": "https://youtu.be/5sc1aOhTYYg?si=r8Yev62PqtclUYdZ"
+    "videoUrl": "https://youtu.be/5sc1aOhTYYg?si=r8Yev62PqtclUYdZ",
+    "category": "Cooking Equipment",
+    "price": "₹78,000",
+    "fullDescription": "Electric tilting kadhai designed for frying, sautéing, and simmering with precise thermostatic control and uniform heat distribution.",
+    "features": [
+      "Thermostat temperature control",
+      "Tilting mechanism for easy discharge",
+      "Double-layer insulated body",
+      "Energy-efficient heating elements",
+      "Safety cutoff"
+    ],
+    "specifications": [
+      "Capacity: 40–60 L",
+      "Power: 6–9 kW",
+      "Temp range: 50–300°C",
+      "Material: SS304 inner vessel"
+    ]
   },
   {
     "title": "Papad Machine",
     "description": "An efficient machine for making papad.",
     "imageUrl": "/img/products/Papad machine.jpg",
-    "videoUrl": "https://youtu.be/z5fGsfPsG5Y?si=0uguWzu4yg8z8nNJ"
+    "videoUrl": "https://youtu.be/z5fGsfPsG5Y?si=0uguWzu4yg8z8nNJ",
+    "category": "Snack Processing",
+    "price": "₹1,35,000",
+    "fullDescription": "Semi-automatic papad making machine with adjustable thickness and diameter control, suitable for small and medium production.",
+    "features": [
+      "Adjustable thickness roller",
+      "Hygienic dough handling",
+      "Low maintenance design",
+      "High throughput",
+      "Sturdy MS/SS construction"
+    ],
+    "specifications": [
+      "Output: 800–1200 papads/hr",
+      "Thickness: 0.5–2.5 mm",
+      "Power: 1–1.5 kW",
+      "Material: SS contact parts"
+    ]
   },
   {
     "title": "Coating Flouring Machine",
     "description": "An efficient machine for coating the any wafers or chips with masala.",
     "imageUrl": "/img/products/Coating Flouring Machine.jpg",
-    "videoUrl": "https://youtu.be/iYUsS5hp0VE?si=Q4_KhOZmAk0D-U2h"
+    "videoUrl": "https://youtu.be/iYUsS5hp0VE?si=Q4_KhOZmAk0D-U2h",
+    "category": "Seasoning",
+    "price": "₹92,000",
+    "fullDescription": "Rotary drum-type seasoning unit for uniform spice or flour coating on chips, wafers, and snacks with adjustable dosing.",
+    "features": [
+      "Continuous rotary drum",
+      "Adjustable spice dosing",
+      "Uniform coating technology",
+      "Easy wash-down design",
+      "Food-grade build"
+    ],
+    "specifications": [
+      "Capacity: 80–120 kg/hr",
+      "Power: 0.75–1.1 kW",
+      "Material: SS304 drum",
+      "Speed: Variable (VFD)"
+    ]
   },
   {
     "title": "Potato Chips Machine",
     "description": "An efficient machine for cutting potatos to chips.",
     "imageUrl": "/img/products/Potato Chips Machine.jpg",
-    "videoUrl": "https://youtu.be/_u6pXmNu9nE?si=79v080psWVzhSaHH"
+    "videoUrl": "https://youtu.be/_u6pXmNu9nE?si=79v080psWVzhSaHH",
+    "category": "Cutting",
+    "price": "₹58,000",
+    "fullDescription": "Commercial potato slicer for uniform chips with interchangeable blades for ripple, straight, and thickness variations.",
+    "features": [
+      "High-speed slicing",
+      "Interchangeable blades",
+      "Easy cleaning",
+      "Low wastage cutting",
+      "Compact footprint"
+    ],
+    "specifications": [
+      "Capacity: 150–250 kg/hr",
+      "Power: 0.75 kW",
+      "Blade types: Ripple/Flat",
+      "Material: SS contact parts"
+    ]
   },
   {
-    "title": "Potato Wafer Machine",
-    "description": "An efficient machine for making Potato Wafers.",
-    "imageUrl": "/img/products/Potato Wafer Machine.jpg",
-    "videoUrl": "https://youtu.be/_u6pXmNu9nE?si=79v080psWVzhSaHH"
+    "title": "Potato Dryer Machine",
+    "description": "An efficient machine for drying the potatos after slicing.",
+    "imageUrl": "/img/products/Dryer Machine.jpg",
+    "videoUrl": "https://youtu.be/_u6pXmNu9nE?si=79v080psWVzhSaHH",
+    "category": "De-watering",
+    "price": "₹72,000",
+    "fullDescription": "Centrifugal hydro dryer to remove surface moisture after washing or slicing, improving frying quality and oil absorption.",
+    "features": [
+      "High-speed centrifugal drum",
+      "Vibration-free operation",
+      "Quick moisture removal",
+      "Sturdy MS/SS frame",
+      "Safety lock lid"
+    ],
+    "specifications": [
+      "Capacity: 80–120 kg/hr",
+      "Power: 1.5 kW",
+      "Basket: SS perforated",
+      "Speed: 1200–1400 RPM"
+    ]
+  },
+  {
+    "title": "Potato Piller Machine",
+    "description": "An efficient machine for Pilling potatos.",
+    "imageUrl": "/img/products/Potato Piller.jpg",
+    "videoUrl": "https://youtu.be/_u6pXmNu9nE?si=79v080psWVzhSaHH",
+    "category": "Peeling",
+    "price": "₹49,000",
+    "fullDescription": "Abrasive batch peeler for potatoes and root vegetables with stone lining for efficient skin removal and water inlet.",
+    "features": [
+      "Abrasive stone liner",
+      "Water spray inlet",
+      "Quick batch cycles",
+      "Easy discharge chute",
+      "Low maintenance"
+    ],
+    "specifications": [
+      "Capacity: 10–20 kg/batch",
+      "Cycle time: 2–4 min",
+      "Power: 0.75–1 kW",
+      "Material: SS drum, MS frame"
+    ]
+  },
+  {
+    "title": "Powder Mixing Machine",
+    "description": "An efficient machine for Mixing Masalas.",
+    "imageUrl": "/img/products/Powder Mixing Machine.jpg",
+    "videoUrl": "https://youtu.be/UtWQt-4XvCw?si=SQM8_9qi7r7uRVPs",
+    "category": "Mixing",
+    "price": "₹88,000",
+    "fullDescription": "Ribbon blender/masala mixer for homogenous dry powder mixing with safety guards and dust-tight cover.",
+    "features": [
+      "Twin ribbon agitator",
+      "Dust-proof lid",
+      "Uniform mixing",
+      "Side discharge",
+      "Robust gear drive"
+    ],
+    "specifications": [
+      "Capacity: 50–100 kg/batch",
+      "Power: 2–3 kW",
+      "Material: SS304 contact",
+      "Speed: 35–45 RPM"
+    ]
+  },
+  {
+    "title": "Sandwich Griller",
+    "description": "A machine designed for grilling and toasting sandwiches efficiently.",
+    "imageUrl": "/img/products/SANDWICH GRILLER.jpg",
+    "videoUrl": "https://youtu.be/57PcxSDcAIM?si=zf1KRSyJLRqXQUN3",
+    "category": "Cooking Equipment",
+    "price": "₹18,500",
+    "fullDescription": "Commercial-grade sandwich press with non-stick plates and adjustable temperature for consistent grilling.",
+    "features": [
+      "Non-stick ribbed plates",
+      "Thermostat control",
+      "Fast heat recovery",
+      "Cool-touch handle",
+      "Removable drip tray"
+    ],
+    "specifications": [
+      "Plate size: 340x230 mm",
+      "Power: 1.8–2.2 kW",
+      "Temp: up to 300°C",
+      "Body: SS with aluminum plates"
+    ]
+  },
+  {
+    "title": "Sugar Cane Juice Machine",
+    "description": "A machine designed for extracting juice from sugar cane.",
+    "imageUrl": "/img/products/Sugar Cane Juice Machine.jpg",
+    "videoUrl": "https://youtu.be/tgwrKQ8VNfI?si=LWoABKq2WFFxD0g3",
+    "category": "Juice Extraction",
+    "price": "₹42,000",
+    "fullDescription": "Compact sugarcane juicer with high extraction efficiency and easy cleaning, suitable for stalls and shops.",
+    "features": [
+      "Food-grade rollers",
+      "High juice yield",
+      "Low foaming design",
+      "Easy dismantling",
+      "Drip-free spout"
+    ],
+    "specifications": [
+      "Capacity: 150–200 glasses/hr",
+      "Power: 0.5–0.75 kW",
+      "Rollers: SS food-grade",
+      "Weight: ~45 kg"
+    ]
+  },
+  {
+    "title": "Garlic Peeling Machine",
+    "description": "A machine designed for peeling garlic efficiently.",
+    "imageUrl": "/img/products/Garlic Peeling Machine.jpg",
+    "videoUrl": "https://youtu.be/W_kIqENl4cQ?si=5DoKLkPkaKz5b6kV",
+    "category": "Peeling",
+    "price": "₹1,10,000",
+    "fullDescription": "Dry-type garlic peeler using compressed air for clean peeling without damaging cloves and with high throughput.",
+    "features": [
+      "Pneumatic peeling",
+      "Food-grade chamber",
+      "Low breakage rate",
+      "Continuous feed option",
+      "Easy maintenance"
+    ],
+    "specifications": [
+      "Capacity: 80–120 kg/hr",
+      "Power: 0.8–1.2 kW",
+      "Air requirement: 0.8 MPa",
+      "Material: SS304"
+    ]
+  },
+  {
+    "title": "Industrial Mixer Grinder",
+    "description": "A machine designed for grinding and mixing various ingredients.",
+    "imageUrl": "/img/products/Industrial Mixer Grinder.jpg",
+    "videoUrl": "https://youtu.be/8dkD9WUTu-o?si=9w-PZu_fEd2DYVCB",
+    "category": "Grinding",
+    "price": "₹62,000",
+    "fullDescription": "Heavy-duty mixer grinder for wet and dry applications with overload protection and stainless steel jars.",
+    "features": [
+      "High-torque motor",
+      "Multi-jar system",
+      "Overload cutoff",
+      "Anti-vibration mounts",
+      "Easy cleaning"
+    ],
+    "specifications": [
+      "Power: 1.5–2.0 kW",
+      "Jar capacity: 5–10 L",
+      "Speed: 2800 RPM",
+      "Body: SS/MS"
+    ]
+  },
+  {
+    "title": "Hammer Pulveriser Machine",
+    "description": "An efficient machine for Grinding Masalas.",
+    "imageUrl": "/img/products/Hammer Pulveriser Machine.jpg",
+    "videoUrl": "https://youtu.be/0j-eHWAX1tU?si=PwoSqs-6brbymJCd",
+    "category": "Pulverizing",
+    "price": "₹1,55,000",
+    "fullDescription": "Hammer-type pulveriser for fine grinding of spices, grains, and herbs with cyclone and dust collection.",
+    "features": [
+      "Fine mesh output",
+      "Cyclone dust control",
+      "Continuous feed hopper",
+      "Wear-resistant hammers",
+      "Low maintenance bearings"
+    ],
+    "specifications": [
+      "Capacity: 80–150 kg/hr",
+      "Power: 5–7.5 HP",
+      "Mesh size: 50–200",
+      "Material: MS/SS contact"
+    ]
   }
 ]
