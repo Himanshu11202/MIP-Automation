@@ -13,30 +13,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import styles from "./slider.module.css";
-
+import coreTeamMembers from "@/data/about/coreTeamMembers.json";
 gsap.registerPlugin(ScrollTrigger);
 const About = () => {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
-
-  const person = [
-    {
-      name: "ABC",
-      position: "Founder / CEO",
-    },
-    {
-      name: "MNO",
-      position: "CTO",
-    },
-    {
-      name: "PQR",
-      position: "Director",
-    },
-    {
-      name: "xyz",
-      position: "hehe",
-    },
-  ];
 
   return (
     <>
@@ -46,11 +27,11 @@ const About = () => {
         <div className="wrapper relative w-full my-14 h-1/2 lg:h-5/6 flex justify-center items-center text-black ">
           <ButtonNavLeft
             ref={prevRef}
-            className={`${person.length <= 3 && "lg:hidden"}`}
+            className={`${coreTeamMembers.length <= 3 && "lg:hidden"}`}
           />
           <ButtonNavRight
             ref={nextRef}
-            className={`${person.length <= 3 && "lg:hidden"}`}
+            className={`${coreTeamMembers.length <= 3 && "lg:hidden"}`}
           />
           <Swiper
             className={`mySwiper w-full items-center pb-14 ${styles.sliderWrapper}`}
@@ -102,7 +83,7 @@ const About = () => {
               }
             }}
           >
-            {person.map((person, index) => (
+            {coreTeamMembers.map((person, index) => (
               <SwiperSlide key={index} className="flex h-full mb-8">
                 <div
                   key={person.name}
